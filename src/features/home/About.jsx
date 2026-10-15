@@ -3,12 +3,14 @@ import { useTranslation } from 'react-i18next'
 import Button from '../../components/ui/Button'
 import MediaPlaceholder from '../../components/ui/MediaPlaceholder'
 import SectionHeading from '../../components/ui/SectionHeading'
+import SectionBackground from '../../components/ui/SectionBackground'
 
 export default function About() {
   const { t } = useTranslation()
   const points = t('about.points', { returnObjects: true })
   return (
     <section id="about" className="section">
+      <SectionBackground seed={2} />
       <div className="container-page grid items-center gap-12 lg:grid-cols-2">
         <div>
           <SectionHeading label={t('about.label')} title={t('about.title')} />

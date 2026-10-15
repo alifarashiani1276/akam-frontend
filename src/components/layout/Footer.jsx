@@ -1,12 +1,14 @@
 import { useTranslation } from 'react-i18next'
 import { NAV_ITEMS, SITE } from '../../config/site'
 import Logo from '../ui/Logo'
+import SectionBackground from '../ui/SectionBackground'
 
 export default function Footer() {
   const { t } = useTranslation()
 
   return (
-    <footer className="bg-base-200 pb-8 pt-16">
+    <footer className="relative isolate overflow-hidden bg-base-200 pb-8 pt-16">
+      <SectionBackground seed={9} />
       <div className="container-page grid gap-10 md:grid-cols-4">
         <div className="md:col-span-2">
           <Logo />

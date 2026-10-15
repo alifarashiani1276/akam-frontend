@@ -1,12 +1,14 @@
 import { useTranslation } from 'react-i18next'
 import SectionHeading from '../../components/ui/SectionHeading'
 import { formatIndex } from '../../utils/format'
+import SectionBackground from '../../components/ui/SectionBackground'
 
 export default function Services() {
   const { t, i18n } = useTranslation()
   const items = t('services.items', { returnObjects: true })
   return (
     <section id="services" className="section bg-base-200">
+      <SectionBackground seed={3} />
       <div className="container-page">
         <SectionHeading label={t('services.label')} title={t('services.title')} />
         <div>

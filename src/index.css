@@ -62,7 +62,8 @@
 /* Reusable building blocks: keeps JSX class lists short. */
 @layer components {
   .container-page { @apply mx-auto w-full max-w-7xl px-4 md:px-8; }
-  .section { @apply scroll-mt-20 py-20 md:py-28; }
+  .section { @apply relative isolate scroll-mt-20 overflow-hidden py-20 md:py-28; }
+  .section-bg { @apply absolute inset-0 -z-10 text-primary/25; mask-image: linear-gradient(to bottom, transparent, black 25%, black 75%, transparent); }
   .section-label { @apply mb-4 block text-sm font-semibold text-primary; }
   .section-title { @apply mb-6 font-display text-4xl uppercase leading-tight md:text-6xl; }
   .section-text { @apply mb-8 max-w-xl text-lg text-base-content/70; }

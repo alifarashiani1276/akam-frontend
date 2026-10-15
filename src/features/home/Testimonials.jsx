@@ -1,11 +1,13 @@
 import { useTranslation } from 'react-i18next'
 import SectionHeading from '../../components/ui/SectionHeading'
+import SectionBackground from '../../components/ui/SectionBackground'
 
 export default function Testimonials() {
   const { t } = useTranslation()
   const items = t('testimonials.items', { returnObjects: true })
   return (
     <section className="section bg-base-200">
+      <SectionBackground seed={6} />
       <div className="container-page">
         <SectionHeading label={t('testimonials.label')} title={t('testimonials.title')} />
         <div className="grid gap-6 md:grid-cols-2">
