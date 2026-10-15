@@ -1,0 +1,76 @@
+{
+  "_todo": "PLACEHOLDER CONTENT: replace texts, numbers and testimonials with the client's real data.",
+  "brand": { "name": "AKAM Machine" },
+  "nav": { "about": "About", "services": "Services", "process": "How we work", "faq": "FAQ", "contact": "Contact" },
+  "common": { "getQuote": "Get a quote", "menu": "Menu" },
+  "hero": {
+    "badge": "AKAM Machine",
+    "title": "Powerful machines. Reliable partnership.",
+    "text": "We supply and support industrial machinery that keeps your operation running, from the first inquiry to after-sales service.",
+    "primaryCta": "Get a quote",
+    "secondaryCta": "Our services"
+  },
+  "about": {
+    "label": "About us",
+    "title": "Engineering reliability for demanding industries",
+    "text": "With solid experience and technical knowledge, our team recommends the right equipment for your needs and stays with you through commissioning and beyond.",
+    "points": ["Equipment selection tailored to your needs", "Professional technical consultation", "Fast response to every inquiry", "Dependable after-sales support"],
+    "cta": "Learn more"
+  },
+  "services": {
+    "label": "Services",
+    "title": "What we do",
+    "items": [
+      { "title": "Industrial machinery supply", "text": "High-quality industrial machinery and equipment for plants and projects of every size.", "points": ["New and used equipment", "Compliant with modern standards", "Coordinated delivery and installation"] },
+      { "title": "Spare parts", "text": "Original and compatible parts to reduce production line downtime.", "points": ["Trusted original parts", "Fast availability", "Help choosing the right part"] },
+      { "title": "Technical consulting", "text": "We analyze your needs and propose the best technical and economic solution.", "points": ["Project needs assessment", "Transparent cost estimate", "Alternative options"] },
+      { "title": "Maintenance and service", "text": "Scheduled maintenance and repairs to extend the life of your equipment.", "points": ["Periodic inspection and service", "Fast fault diagnosis", "Reports and status follow-up"] }
+    ]
+  },
+  "stats": {
+    "items": [
+      { "value": "15+", "label": "Years of experience" },
+      { "value": "500+", "label": "Projects delivered" },
+      { "value": "24/7", "label": "Customer support" },
+      { "value": "98%", "label": "Client satisfaction" }
+    ]
+  },
+  "process": {
+    "label": "Process",
+    "title": "Engineered reliability",
+    "steps": [
+      { "title": "Consultation and analysis", "text": "We listen to and analyze your requirements." },
+      { "title": "Proposal and coordination", "text": "We present the solution with a clear price." },
+      { "title": "Delivery and support", "text": "Delivery, commissioning and after-sales support." }
+    ]
+  },
+  "testimonials": {
+    "label": "Testimonials",
+    "title": "Trusted by clients",
+    "items": [
+      { "quote": "Working with this team made our equipment sourcing much easier, and their response time was excellent.", "name": "Michael Anderson", "role": "Head of Operations" },
+      { "quote": "Accurate consultation and on-time delivery: exactly what we expect from a supplier.", "name": "Julian Hayes", "role": "Procurement Manager" }
+    ]
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Answers to your questions",
+    "items": [
+      { "q": "Which industries do you serve?", "a": "We supply equipment for manufacturing, mining, construction, agriculture and other sectors." },
+      { "q": "How can I get a quote?", "a": "Contact us through the form or by phone and our specialists will reply as soon as possible." },
+      { "q": "Do you offer after-sales service?", "a": "Yes. Service, repairs and spare parts supply are part of what we do." },
+      { "q": "Can I get advice before buying?", "a": "Yes. Our specialists will guide you before purchase so you can choose the best option." }
+    ]
+  },
+  "contact": {
+    "title": "Have any questions?",
+    "text": "Reach out anytime. Our team is ready to help.",
+    "cta": "Contact us"
+  },
+  "footer": {
+    "tagline": "Reliable industrial machinery for your business.",
+    "quickLinks": "Quick links",
+    "contact": "Contact",
+    "rights": "© 2026 AKAM Machine. All rights reserved."
+  }
+}

@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: false;
+}
+
+/* Brand colors from the AKAM brand guide: #FFCF05, #FAB732, #000000, #B3B3B2 */
+@plugin "daisyui/theme" {
+  name: "akam";
+  default: true;
+  prefersdark: true;
+  color-scheme: dark;
+  --color-base-100: #0b0b0b;
+  --color-base-200: #151515;
+  --color-base-300: #262626;
+  --color-base-content: #f5f5f5;
+  --color-primary: #ffcf05;
+  --color-primary-content: #000000;
+  --color-secondary: #fab732;
+  --color-secondary-content: #000000;
+  --color-accent: #b3b3b2;
+  --color-accent-content: #000000;
+  --color-neutral: #000000;
+  --color-neutral-content: #ffffff;
+  --color-info: #3abff8;
+  --color-info-content: #002b3d;
+  --color-success: #36d399;
+  --color-success-content: #003320;
+  --color-warning: #fab732;
+  --color-warning-content: #000000;
+  --color-error: #f87272;
+  --color-error-content: #470000;
+  --radius-selector: 0.25rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.5rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+/* Peyda (brand Persian font): put the font files in /public/fonts. Vazirmatn is the fallback until then. */
+@font-face { font-family: "Peyda"; font-weight: 300; src: url("/fonts/Peyda-Light.woff2") format("woff2"); font-display: swap; }
+@font-face { font-family: "Peyda"; font-weight: 400; src: url("/fonts/Peyda-Regular.woff2") format("woff2"); font-display: swap; }
+@font-face { font-family: "Peyda"; font-weight: 500; src: url("/fonts/Peyda-Medium.woff2") format("woff2"); font-display: swap; }
+@font-face { font-family: "Peyda"; font-weight: 600; src: url("/fonts/Peyda-SemiBold.woff2") format("woff2"); font-display: swap; }
+@font-face { font-family: "Peyda"; font-weight: 800; src: url("/fonts/Peyda-ExtraBold.woff2") format("woff2"); font-display: swap; }
+@font-face { font-family: "Peyda"; font-weight: 900; src: url("/fonts/Peyda-Black.woff2") format("woff2"); font-display: swap; }
+
+@theme {
+  --font-sans: "Peyda", "Inter", "Vazirmatn", sans-serif;
+  --font-display: "Bebas Neue", "Oswald", "Peyda", "Vazirmatn", sans-serif;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  h1, h2, h3 { font-family: var(--font-display); }
+  [dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3 { font-weight: 800; }
+}
+
+/* Reusable building blocks: keeps JSX class lists short. */
+@layer components {
+  .container-page { @apply mx-auto w-full max-w-7xl px-4 md:px-8; }
+  .section { @apply scroll-mt-20 py-20 md:py-28; }
+  .section-label { @apply mb-4 block text-sm font-semibold text-primary; }
+  .section-title { @apply mb-6 font-display text-4xl uppercase leading-tight md:text-6xl; }
+  .section-text { @apply mb-8 max-w-xl text-lg text-base-content/70; }
+
+  .site-header { @apply sticky top-0 z-50 border-b border-base-300 bg-base-100/80 backdrop-blur; }
+
+  .hero-section { @apply relative isolate overflow-hidden pb-20 pt-10 md:pb-32; }
+  .hero-word { @apply flex justify-center font-display text-[30vw] leading-[0.85] text-white md:text-[26vw]; }
+  .hero-media { @apply relative z-10 mx-auto -mt-[12vw] w-[85%] max-w-3xl; }
+  .hero-title { @apply mb-6 max-w-4xl font-display text-4xl uppercase leading-tight md:text-7xl; }
+  .hero-fade { mask-image: linear-gradient(to bottom, black 30%, transparent); }
+
+  .media-placeholder { @apply relative aspect-[4/3] overflow-hidden rounded-box bg-primary; }
+  .cta-box { @apply relative overflow-hidden rounded-box bg-primary p-8 text-primary-content md:p-16; }
+
+  .service-item { @apply rounded-none border-b border-base-300; }
+  .service-title { @apply flex items-center gap-4 font-display text-2xl uppercase md:text-4xl; }
+  .index-number { @apply font-display text-3xl text-primary; }
+}
+
+/* Endless text ticker under the hero */
+@keyframes marquee { to { transform: translateX(-50%); } }
+
+@layer components {
+  .marquee { @apply overflow-hidden border-y border-base-300 bg-base-200 py-5; }
+  .marquee-track { @apply flex w-max animate-[marquee_30s_linear_infinite] gap-10; }
+  .marquee-item { @apply flex items-center gap-10 whitespace-nowrap font-display text-2xl uppercase; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+}
