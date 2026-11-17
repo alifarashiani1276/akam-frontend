@@ -1,5 +1,5 @@
 // Single source of truth for supported languages.
-// To add a language: add it here + create src/i18n/locales/<code>.json + register it in src/i18n/index.js
+// To add a language: add it here + create the folder src/i18n/locales/<code>/ (copy en/*.json). Nothing else to register.
 export const LANGUAGES = {
   fa: { label: 'فارسی', dir: 'rtl' },
   ar: { label: 'العربية', dir: 'rtl' },

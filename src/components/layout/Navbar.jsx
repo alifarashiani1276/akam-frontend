@@ -3,16 +3,16 @@ import { Link, useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { NAV_ITEMS } from '../../config/site'
 import Button from '../ui/Button'
-import Logo from '../ui/Logo'
 import LanguageSwitcher from './LanguageSwitcher'
+import NavItem from './NavItem'
 
 export default function Navbar() {
   const { t } = useTranslation()
   const { lang } = useParams()
 
-  const links = NAV_ITEMS.map((id) => (
-    <li key={id}>
-      <a href={`#${id}`}>{t(`nav.${id}`)}</a>
+  const links = NAV_ITEMS.map((item) => (
+    <li key={item.id}>
+      <NavItem item={item}>{t(`nav.${item.id}`)}</NavItem>
     </li>
   ))
 
@@ -29,7 +29,7 @@ export default function Navbar() {
             </ul>
           </div>
           <Link to={`/${lang}`}>
-            <Logo />
+            <img src="/images/logo-akam.webp" alt={t('brand.name')} className="h-10 w-auto" />
           </Link>
         </div>
 
@@ -37,7 +37,7 @@ export default function Navbar() {
 
         <div className="navbar-end gap-2">
           <LanguageSwitcher />
-          <Button href="#contact" size="sm" className="hidden sm:inline-flex">
+          <Button href="#contact" size="sm" variant="dark" className="hidden sm:inline-flex">
             {t('common.getQuote')}
           </Button>
         </div>

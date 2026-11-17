@@ -16,6 +16,15 @@ export default function MainLayout() {
     i18n.changeLanguage(lang)
     document.documentElement.lang = lang
     document.documentElement.dir = LANGUAGES[lang].dir
+    // Page title + description in the current language (texts: meta.* in locales/<lang>/common.json)
+    document.title = i18n.t('meta.title', { lng: lang })
+    let description = document.querySelector('meta[name="description"]')
+    if (!description) {
+      description = document.createElement('meta')
+      description.name = 'description'
+      document.head.appendChild(description)
+    }
+    description.content = i18n.t('meta.description', { lng: lang })
   }, [lang, supported, i18n])
 
   if (!supported) return <Navigate to={`/${DEFAULT_LANG}`} replace />

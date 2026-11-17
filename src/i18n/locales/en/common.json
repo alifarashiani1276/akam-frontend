@@ -1,0 +1,37 @@
+{
+  "brand": {
+    "name": "AKAM Machine"
+  },
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "quality": "Quality",
+    "process": "How we work",
+    "contact": "Contact",
+    "home": "Home",
+    "products": "Products"
+  },
+  "common": {
+    "getQuote": "Request a quote",
+    "menu": "Menu"
+  },
+  "meta": {
+    "title": "AKAM Machine | Industrial & Mining Machinery Manufacturing",
+    "description": "AKAM Machine designs, manufactures and rebuilds mining, industrial and agricultural machinery in Shahrood, Iran."
+  },
+  "footer": {
+    "tagline": "Design, manufacture and rebuilding of industrial, mining and agricultural machinery.",
+    "quickLinks": "Quick links",
+    "contact": "Contact",
+    "address": "Semnan Province, Shahrood, Industrial Town, Phase 1, Enghelab Blvd., above the fire station",
+    "postalCode": "Postal code",
+    "rights": "© {{year}} AKAM Machine. All rights reserved."
+  },
+  "contactLabels": {
+    "sales": "Sales",
+    "landline": "Phone",
+    "afterSales": "After-sales service",
+    "finance": "Finance",
+    "purchase": "Purchasing"
+  }
+}

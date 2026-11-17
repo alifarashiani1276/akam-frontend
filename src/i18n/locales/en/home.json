@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "tagline": "Manufacturing power for industry"
+  },
+  "about": {
+    "title": "We design, build and deliver",
+    "text": "From the 3D drawing to machining, welding, hydraulics and industrial electrical work, all in one workshop in Shahrood",
+    "cta": "About us"
+  },
+  "quality": {
+    "title": "Quality and engineering standards",
+    "items": [
+      "3D design and simulation",
+      "Quality control and performance testing",
+      "Welding and structural fabrication standards",
+      "Hydraulics and industrial electrical systems",
+      "Heat treatment and machining"
+    ]
+  },
+  "process": {
+    "title": "Project stages",
+    "steps": [
+      {
+        "title": "Requirements and design",
+        "text": "The customer's needs are gathered and a 3D model is prepared."
+      },
+      {
+        "title": "Drawings and manufacturing",
+        "text": "Drawings are prepared, followed by machining, welding and fabrication."
+      },
+      {
+        "title": "Assembly, testing and delivery",
+        "text": "The equipment is assembled, performance-tested and delivered."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact us",
+    "text": "Get in touch for a price inquiry, technical consultation or to register a project.",
+    "cta": "Send an email"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "catalog": {
+    "sections": {
+      "mining": {
+        "short": "Mining machinery",
+        "title": "Mining machinery and mineral processing equipment",
+        "text": "Design and manufacture of equipment for conveying, crushing, sizing and separating minerals, focused on hard and heavy materials such as ferrochrome, ferromanganese, ferroalloy products and industrial slag.",
+        "items": {
+          "crushing": "Crushing equipment: double-toggle jaw crushers and crushing equipment for hard and heavy materials.",
+          "screening": "Sizing equipment: industrial screens and equipment for separating materials by size.",
+          "gravity": "Gravity separation equipment: jig machines and shaking tables.",
+          "conveying": "Material transfer equipment: feeding and conveying equipment between processing stages.",
+          "lines": "Complete crushing and processing line equipment."
+        }
+      },
+      "industrial": {
+        "short": "Industrial equipment",
+        "title": "Industrial machinery, equipment and parts",
+        "text": "Manufacture of machinery, equipment and parts for factory production lines, not limited to one industry, including steel, cement and ferroalloy plants.",
+        "items": {
+          "molten": "Molten metal handling: ladles for carrying molten metal and related equipment.",
+          "handling": "Material handling: industrial hooks, material transfer equipment for smelting lines and handling of finished products.",
+          "dust": "Industrial dust collection: dust-collection cyclones and related parts.",
+          "parts": "Production line parts and equipment: custom parts, mechanical assemblies and special equipment."
+        }
+      },
+      "engineering": {
+        "short": "Engineering & rebuilding",
+        "title": "Engineering, design and machinery rebuilding services",
+        "text": "Turning customer needs into engineering designs, building special-purpose machines, reverse engineering and rebuilding existing equipment.",
+        "items": {
+          "custom": "Special-purpose machines: requirements intake, 3D modeling, drawings, manufacturing, assembly and testing.",
+          "reverse": "Reverse engineering and improvement: examining an existing sample, performance analysis, defect identification, design correction and manufacturing.",
+          "rebuild": "Heavy and mining machinery rebuilding: loader and excavator structures, hydraulic jacks, bucket rebuilding and reinforcement.",
+          "parts": "Industrial parts: overhaul of mechanical assemblies, replacement parts and equipment improvement."
+        }
+      },
+      "agri": {
+        "short": "Agricultural machinery",
+        "title": "Export agricultural machinery",
+        "text": "Land-leveling machinery with laser and satellite control systems, offered for export.",
+        "items": {
+          "laserLeveler": "Laser land levelers.",
+          "gnssLeveler": "Satellite (GPS/GNSS) land levelers.",
+          "laserScraper": "Laser scrapers.",
+          "gnssScraper": "Satellite (GPS/GNSS) scrapers."
+        }
+      }
+    }
+  }
+}
