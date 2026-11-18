@@ -16,7 +16,7 @@ export default function About() {
         </div>
         <Reveal delay={0.4} y={16}>
           <a href="#services" className="group inline-flex items-center gap-3 font-semibold">
-            <Play size={36} className="text-primary transition-transform duration-300 group-hover:scale-125" />
+            <Play size={36} className="animate-[spin_2.5s_linear_infinite] text-primary transition-[scale] duration-300 [transform-origin:44.4%_50%] group-hover:scale-125 motion-reduce:animate-none" />
             {t('about.cta')}
           </a>
         </Reveal>

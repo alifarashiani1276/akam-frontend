@@ -61,7 +61,7 @@
 
 /* Reusable building blocks: keeps JSX class lists short. */
 @layer components {
-  .container-page { @apply mx-auto w-full max-w-7xl px-4 md:px-8; }
+  .container-page { @apply mx-auto w-full max-w-[2000px] px-4 md:px-6; }
   .section { @apply relative isolate scroll-mt-20 overflow-hidden py-20 md:py-28; }
   .section-bg { @apply absolute inset-0 -z-10 text-primary/25; mask-image: linear-gradient(to bottom, transparent, black 25%, black 75%, transparent); }
   .section-label { @apply mb-4 block text-sm font-semibold text-primary; }
@@ -72,6 +72,21 @@
   .site-header .dropdown-content { @apply text-base-content; }
   /* Brand cards (Brand Guidelines 2024): black panel, slanted yellow bullets (the yellow bar is an animated element in Services.jsx). The triangle super graphic is <BrandTriangles />. */
   .brand-card { @apply relative isolate flex flex-col overflow-hidden bg-black md:flex-row; }
+  /* Partner/client logo strip: auto-scrolling, pauses on hover; card border fades out downwards like the Movora reference. */
+  .logo-marquee { @apply overflow-hidden; mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent); }
+  .logo-track { @apply flex w-max animate-[marquee_45s_linear_infinite]; }
+  .logo-marquee:hover .logo-track { animation-play-state: paused; }
+  .fade-border { border: 1px solid transparent; background: linear-gradient(var(--color-base-100), var(--color-base-100)) padding-box, linear-gradient(to bottom, rgb(255 255 255 / 0.5), rgb(255 255 255 / 0) 85%) border-box; }
+  /* White border: strong at the bottom, fading out going up. On hover the whole border becomes solid and the card shakes once. */
+  .brand-card::before, .brand-card::after {
+    content: ""; @apply pointer-events-none absolute inset-0 z-20; padding: 1px;
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor; mask-composite: exclude;
+  }
+  .brand-card::before { background: linear-gradient(to top, rgb(255 255 255 / 0.75), rgb(255 255 255 / 0) 85%); }
+  .brand-card::after { background: rgb(255 255 255 / 0.85); opacity: 0; transition: opacity 0.4s; }
+  .brand-card:hover { animation: card-shake 0.5s ease-in-out; }
+  .brand-card:hover::after { opacity: 1; }
   .brand-list li { @apply flex items-start gap-3; }
   .brand-list li::before { content: ""; @apply mt-1.5 h-3 w-1.5 shrink-0 -skew-x-12 bg-primary; }
 
@@ -91,6 +106,12 @@
 
 /* Endless text ticker under the hero */
 @keyframes marquee { to { transform: translateX(-50%); } }
+@keyframes card-shake {
+  20% { transform: translateX(-3px) rotate(-0.25deg); }
+  40% { transform: translateX(3px) rotate(0.25deg); }
+  60% { transform: translateX(-2px); }
+  80% { transform: translateX(2px); }
+}
 
 @layer components {
   .marquee { @apply overflow-hidden border-y border-base-300 bg-base-200 py-5; }
@@ -99,5 +120,6 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .marquee-track { animation: none; }
+  .marquee-track, .logo-track { animation: none; }
+  .brand-card:hover { animation: none; }
 }

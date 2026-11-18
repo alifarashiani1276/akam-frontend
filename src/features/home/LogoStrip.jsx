@@ -1,18 +1,41 @@
-import { SITE } from '../../config/site'
+import { Cog, Factory, Flame, Gem, Hexagon, Layers, Mountain } from 'lucide-react'
+import { PARTNERS } from '../../config/site'
 
-const EMPTY_FRAMES = 7
+// Add an icon here if you use a new one in PARTNERS.
+const ICONS = { Cog, Factory, Flame, Gem, Hexagon, Layers, Mountain }
 
-// Row of logo frames under the hero. Fill SITE.logos (config/site.js) with image paths when the client sends them.
-export default function LogoStrip() {
-  const items = SITE.logos.length ? SITE.logos : Array.from({ length: EMPTY_FRAMES }, () => null)
+function PartnerCard({ partner }) {
+  const Icon = ICONS[partner.icon] ?? Hexagon
   return (
-    <div className="bg-base-100 py-6">
-      <div className="container-page flex gap-4 overflow-x-auto">
-        {items.map((src, i) => (
-          <div key={src ?? i} className="flex h-20 min-w-32 flex-1 items-center justify-center border-2 border-accent/60 p-3">
-            {src && <img src={src} alt="" className="max-h-full object-contain" />}
-          </div>
-        ))}
+    <div className="fade-border mr-4 flex h-28 w-60 shrink-0 items-center justify-center gap-3 px-6 text-white/55 md:h-32 md:w-72">
+      {partner.src ? (
+        <img src={partner.src} alt={partner.name} className="max-h-10 object-contain opacity-70" />
+      ) : (
+        <>
+          <Icon size={30} strokeWidth={1.75} />
+          <span className="text-xl font-bold">{partner.name}</span>
+        </>
+      )}
+    </div>
+  )
+}
+
+// Auto-scrolling strip of client/partner cards under the hero. Pauses on hover.
+// Always LTR so the loop is seamless in every language. Data: PARTNERS in config/site.js.
+export default function LogoStrip() {
+  if (!PARTNERS.length) return null
+  return (
+    <div className="bg-base-100 py-8">
+      <div dir="ltr" className="logo-marquee">
+        <div className="logo-track">
+          {[0, 1].map((copy) => (
+            <div key={copy} className="flex" aria-hidden={copy === 1}>
+              {PARTNERS.map((partner) => (
+                <PartnerCard key={partner.name} partner={partner} />
+              ))}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   )

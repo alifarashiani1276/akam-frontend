@@ -4,6 +4,7 @@ import Reveal from '../../components/motion/Reveal'
 import TextReveal from '../../components/motion/TextReveal'
 import BrandTriangles from '../../components/ui/BrandTriangles'
 import { getVisibleCatalog } from '../../config/catalog'
+import { TRIANGLE_TIP_LEFT, TRIANGLE_TIP_RIGHT } from '../../utils/roundedTriangle'
 
 const EASE = [0.22, 1, 0.36, 1]
 const ITEM = { hidden: { opacity: 0, y: 14 }, visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: EASE } } }
@@ -12,11 +13,22 @@ const VIEW = { once: true, margin: '-80px' }
 // One card per main section. Ids + image: config/catalog.js, texts: locales/<lang>/catalog.json.
 // Card look: .brand-card / .brand-list in index.css (Brand Guidelines 2024).
 // Animations: card slides up, yellow bar draws across, photo zooms out, title reveals by word, list items appear one by one.
-// The photo is cut into a triangle that points at the text (mirrored automatically in LTR).
+// The photo is cut into a small rounded triangle (like the About play button) that points at the text (mirrored in LTR).
 export default function Services() {
   const { t } = useTranslation()
   return (
     <section id="services" className="relative scroll-mt-20 py-10 md:py-16">
+      {/* Rounded play-button triangle used to cut the card photos (mirrored for RTL/LTR) */}
+      <svg width="0" height="0" className="absolute" aria-hidden="true">
+        <defs>
+          <clipPath id="brand-tri-rtl" clipPathUnits="objectBoundingBox">
+            <path d={TRIANGLE_TIP_LEFT} />
+          </clipPath>
+          <clipPath id="brand-tri-ltr" clipPathUnits="objectBoundingBox">
+            <path d={TRIANGLE_TIP_RIGHT} />
+          </clipPath>
+        </defs>
+      </svg>
       <div className="container-page space-y-8">
         {getVisibleCatalog().map(({ id, items, image }, i) => {
           const base = `catalog.sections.${id}`
@@ -32,7 +44,7 @@ export default function Services() {
                   viewport={VIEW}
                   transition={{ duration: 1.1, delay: 0.2, ease: EASE }}
                 />
-                <div className="relative min-h-56 overflow-hidden md:min-h-0 md:w-2/5 md:shrink-0 md:[clip-path:polygon(100%_50%,0_0,0_100%)] md:rtl:[clip-path:polygon(0_50%,100%_0,100%_100%)]">
+                <div className="relative h-56 w-full overflow-hidden md:m-8 md:h-72 md:w-64 md:shrink-0 md:self-center md:[clip-path:url(#brand-tri-ltr)] md:rtl:[clip-path:url(#brand-tri-rtl)]">
                   <motion.img
                     src={image}
                     alt=""

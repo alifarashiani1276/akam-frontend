@@ -2,11 +2,23 @@
 export const SITE = {
   wordmark: 'AKAM', // giant word in the hero
   heroImage: '/images/hero.webp', // hero background photo (public/images)
-  logos: [], // client/partner logos under the hero, e.g. '/images/logos/a.png'. Empty = 7 empty frames like the mockup
   email: null, // set when the client confirms it, the contact section + footer pick it up
   postalCode: '3614949151',
   social: [], // e.g. { label: 'Instagram', href: 'https://instagram.com/...' }
 }
+
+// Client / partner logos under the hero (auto-scrolling strip). These are PLACEHOLDERS: replace with real clients.
+// { name, icon } shows an icon + name (icons: Cog, Factory, Flame, Gem, Hexagon, Layers, Mountain, see LogoStrip.jsx)
+// { name, src: '/images/logos/x.png' } shows a real logo image instead.
+export const PARTNERS = [
+  { name: 'Nova Steel', icon: 'Layers' },
+  { name: 'Karan Mining', icon: 'Mountain' },
+  { name: 'Zagros Cement', icon: 'Factory' },
+  { name: 'Persia Alloy', icon: 'Flame' },
+  { name: 'Alborz Industrial', icon: 'Cog' },
+  { name: 'Tabas Minerals', icon: 'Gem' },
+  { name: 'Sahand Ferro', icon: 'Hexagon' },
+]
 
 // Contact channels. Only entries with confirmed: true AND a number are shown on the site.
 // The client has NOT confirmed the landline or the dialing of the department codes yet,

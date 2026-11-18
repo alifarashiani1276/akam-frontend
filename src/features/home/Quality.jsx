@@ -7,7 +7,8 @@ const EASE = [0.22, 1, 0.36, 1]
 const ITEM = { hidden: { opacity: 0, y: 12 }, visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: EASE } } }
 const LINE = { hidden: { scaleX: 0 }, visible: { scaleX: 1, transition: { duration: 0.9, ease: EASE } } }
 
-// Full-width photo (parallax on scroll) with the title and a list at the start side.
+// Full-width photo (parallax on scroll). The machine is on the right of the photo, so the text always sits on the
+// empty LEFT side in every language (left edge in LTR, left side in RTL), never on top of the machine.
 // Each list item fades in and its underline draws across.
 export default function Quality() {
   const { t } = useTranslation()
@@ -23,10 +24,10 @@ export default function Quality() {
         alt=""
         loading="lazy"
         style={{ y: imageY }}
-        className="absolute inset-x-0 -top-[10%] -z-20 h-[120%] w-full object-cover ltr:-scale-x-100"
+        className="absolute inset-x-0 -top-[10%] -z-20 h-[120%] w-full object-cover"
       />
-      <div className="absolute inset-0 -z-10 bg-black/40" />
-      <div className="container-page">
+      <div className="absolute inset-0 -z-10 bg-linear-to-r from-black/60 via-black/20 to-transparent" />
+      <div className="container-page flex justify-start rtl:justify-end">
         <div className="max-w-xs">
           <TextReveal as="h2" text={t('quality.title')} className="mb-8 block text-4xl font-extrabold leading-snug text-primary md:text-5xl" />
           <motion.ul
