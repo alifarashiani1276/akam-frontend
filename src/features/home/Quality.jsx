@@ -25,12 +25,13 @@ export default function Quality() {
         alt=""
         loading="lazy"
         style={{ y: imageY }}
-        className="absolute inset-x-0 -top-[10%] -z-20 h-[120%] w-full object-cover rtl:-scale-x-100"
+        className="absolute inset-x-0 -top-[10%] -z-20 h-[120%] w-full object-cover brightness-90 rtl:-scale-x-100"
       />
-      <div className="absolute inset-0 -z-10 bg-linear-to-r from-black/60 via-black/20 to-transparent rtl:bg-linear-to-l" />
+      {/* Dark shade entering from the start side (right in fa/ar, left in ru/en); stronger on mobile where the text covers the whole width. Tune the three black/NN values. */}
+      <div className="absolute inset-0 -z-10 bg-linear-to-r from-black/80 via-black/55 to-black/20 md:from-black/70 md:via-black/30 md:to-transparent rtl:bg-linear-to-l" />
       <div className="container-page flex justify-start">
         <div className="max-w-xs md:ms-12 xl:ms-24">
-          <TextReveal as="h2" text={t('quality.title')} className="mb-8 block text-4xl font-extrabold leading-snug text-primary md:text-5xl" />
+          <TextReveal as="h2" text={t('quality.title')} className="mb-8 block text-4xl font-extrabold leading-snug text-primary [text-shadow:0_2px_12px_rgb(0_0_0/0.6)] md:text-5xl" />
           <motion.ul
             key={i18n.language}
             initial="hidden"
@@ -39,7 +40,7 @@ export default function Quality() {
             transition={{ staggerChildren: 0.12, delayChildren: 0.3 }}
           >
             {items.map((item) => (
-              <motion.li key={item} variants={ITEM} className="relative py-2 text-sm font-semibold text-white">
+              <motion.li key={item} variants={ITEM} className="relative py-2 text-sm font-semibold text-white [text-shadow:0_1px_8px_rgb(0_0_0/0.65)]">
                 {item}
                 <motion.span variants={LINE} className="absolute inset-x-0 bottom-0 h-px origin-left bg-white/70 rtl:origin-right" />
               </motion.li>
