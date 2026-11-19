@@ -15,7 +15,7 @@ const VIEW = { once: true, margin: '-80px' }
 // Animations: card slides up, yellow bar draws across, photo zooms out, title reveals by word, list items appear one by one.
 // The photo is cut into a small rounded triangle (like the About play button) that points at the text (mirrored in LTR).
 export default function Services() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   return (
     <section id="services" className="relative scroll-mt-20 py-10 md:py-16">
       {/* Rounded play-button triangle used to cut the card photos (mirrored for RTL/LTR) */}
@@ -34,7 +34,8 @@ export default function Services() {
           const base = `catalog.sections.${id}`
           return (
             <Reveal key={id}>
-              <article className="brand-card transition-transform duration-500 hover:-translate-y-1">
+              <div className="group">
+              <article className="brand-card">
                 <BrandTriangles seed={i + 3} className="text-white" />
                 <motion.span
                   aria-hidden="true"
@@ -59,6 +60,7 @@ export default function Services() {
                 <div className="flex-1 p-6 md:p-10">
                   <TextReveal as="h3" text={t(`${base}.title`)} delay={0.15} className="mb-4 block text-2xl font-extrabold uppercase text-primary md:text-4xl" />
                   <motion.ul
+                    key={i18n.language}
                     className="brand-list space-y-2 text-sm text-base-content/80 md:text-base"
                     initial="hidden"
                     whileInView="visible"
@@ -73,6 +75,7 @@ export default function Services() {
                   </motion.ul>
                 </div>
               </article>
+              </div>
             </Reveal>
           )
         })}

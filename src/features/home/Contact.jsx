@@ -1,5 +1,4 @@
-import { MapPin, Phone } from 'lucide-react'
-import { motion } from 'motion/react'
+import { MapPin, Phone, Play } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import TextReveal from '../../components/motion/TextReveal'
 import Button from '../../components/ui/Button'
@@ -35,19 +34,13 @@ export default function Contact() {
             {t('footer.address')}
           </p>
         </div>
-        <svg viewBox="0 0 80 80" className="hidden h-24 w-24 shrink-0 sm:block ltr:-scale-x-100" aria-hidden="true">
-          <motion.polygon
-            points="70,8 70,72 12,40"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="5"
-            strokeLinejoin="round"
-            initial={{ pathLength: 0 }}
-            whileInView={{ pathLength: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1.4, ease: [0.22, 1, 0.36, 1] }}
-          />
-        </svg>
+        {/* Big rounded triangle (same lucide "Play" shape as About/Process), spinning around its center. Size: change size={96}. */}
+        <Play
+          size={96}
+          strokeWidth={1.5}
+          aria-hidden="true"
+          className="hidden shrink-0 animate-[spin_2.5s_linear_infinite] [transform-origin:44.4%_50%] motion-reduce:animate-none sm:block"
+        />
       </div>
     </section>
   )

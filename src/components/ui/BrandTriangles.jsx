@@ -16,12 +16,12 @@ export default function BrandTriangles({ className = '', seed = 7 }) {
       className={`pointer-events-none absolute inset-0 -z-10 h-full w-full ltr:-scale-x-100 ${className}`}
       fill="none"
       stroke="currentColor"
-      strokeWidth="1"
+      strokeWidth="0.8"
       strokeLinejoin="round"
       aria-hidden="true"
     >
       {paths.map((d, i) => (
-        <path key={i} d={d} vectorEffect="non-scaling-stroke" strokeOpacity={0.5 - i * 0.1} />
+        <path key={i} d={d} strokeOpacity={0.5 - i * 0.1} />
       ))}
     </svg>
   )

@@ -1,0 +1,28 @@
+{
+  "faq": {
+    "label": "FAQ",
+    "title": "Common questions",
+    "items": [
+      {
+        "q": "What industries does AKAM Machine build for?",
+        "a": "We design and build equipment for mining and mineral processing, metal and foundry industries, engineering services, and agricultural machinery."
+      },
+      {
+        "q": "Can you build custom equipment?",
+        "a": "Yes. We start from your requirements or drawings and handle 3D design, machining, welding, hydraulics and industrial electrics in one workshop."
+      },
+      {
+        "q": "What does the project process look like?",
+        "a": "Requirements and design, drawings and fabrication, and finally assembly, performance testing and delivery of the equipment."
+      },
+      {
+        "q": "How do I request a quote?",
+        "a": "Contact our sales team from the Contact section and describe your need, and we will provide technical advice and pricing."
+      },
+      {
+        "q": "Do you supply spare parts and after-sales service?",
+        "a": "Yes, parts supply and equipment rebuilding are part of our services. Contact us for details."
+      }
+    ]
+  }
+}

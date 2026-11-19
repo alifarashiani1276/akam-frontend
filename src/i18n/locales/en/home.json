@@ -17,7 +17,28 @@
       "Heat treatment and machining"
     ]
   },
+  "stats": {
+    "items": [
+      {
+        "value": "15+",
+        "label": "Years of experience"
+      },
+      {
+        "value": "500+",
+        "label": "Projects delivered"
+      },
+      {
+        "value": "24/7",
+        "label": "Customer support"
+      },
+      {
+        "value": "98%",
+        "label": "Client satisfaction"
+      }
+    ]
+  },
   "process": {
+    "label": "Process",
     "title": "Project stages",
     "steps": [
       {

@@ -54,7 +54,7 @@
 }
 
 @layer base {
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
   h1, h2, h3 { font-family: var(--font-display); }
   [dir="rtl"] h1, [dir="rtl"] h2, [dir="rtl"] h3 { font-weight: 800; }
 }
@@ -76,17 +76,16 @@
   .logo-marquee { @apply overflow-hidden; mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent); }
   .logo-track { @apply flex w-max animate-[marquee_45s_linear_infinite]; }
   .logo-marquee:hover .logo-track { animation-play-state: paused; }
+  /* Stats card (like the reference): slightly lighter than the page, thin white border that fades out downwards. */
+  .stat-card { border: 1px solid transparent; background: linear-gradient(#121212, #121212) padding-box, linear-gradient(to bottom, rgb(255 255 255 / 0.75), rgb(255 255 255 / 0) 90%) border-box; }
   .fade-border { border: 1px solid transparent; background: linear-gradient(var(--color-base-100), var(--color-base-100)) padding-box, linear-gradient(to bottom, rgb(255 255 255 / 0.5), rgb(255 255 255 / 0) 85%) border-box; }
-  /* White border: strong at the bottom, fading out going up. On hover the whole border becomes solid and the card shakes once. */
-  .brand-card::before, .brand-card::after {
-    content: ""; @apply pointer-events-none absolute inset-0 z-20; padding: 1px;
-    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-    -webkit-mask-composite: xor; mask-composite: exclude;
-  }
-  .brand-card::before { background: linear-gradient(to top, rgb(255 255 255 / 0.75), rgb(255 255 255 / 0) 85%); }
-  .brand-card::after { background: rgb(255 255 255 / 0.85); opacity: 0; transition: opacity 0.4s; }
-  .brand-card:hover { animation: card-shake 0.5s ease-in-out; }
-  .brand-card:hover::after { opacity: 1; }
+  /* White border: strong at the bottom, fading out going up along the side edges (plain border-image, no masks).
+     On hover (wrapper .group in Services.jsx) a solid inset ring fades in (box-shadow classes on the card). */
+  .brand-card::before { content: ""; @apply pointer-events-none absolute inset-0 z-20 border border-transparent; }
+  .brand-card::before { border-image: linear-gradient(to top, rgb(255 255 255 / 0.9), rgb(255 255 255 / 0.5) 45%, rgb(255 255 255 / 0)) 1; }
+  /* Hover (wrapper .group in Services.jsx): quick lift + solid white ring. Speed: change the two 0.22s values. */
+  .brand-card { box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0); transition: translate 0.22s ease-out, box-shadow 0.22s ease-out; }
+  .group:hover .brand-card { translate: 0 -8px; box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.9); }
   .brand-list li { @apply flex items-start gap-3; }
   .brand-list li::before { content: ""; @apply mt-1.5 h-3 w-1.5 shrink-0 -skew-x-12 bg-primary; }
 
@@ -106,12 +105,6 @@
 
 /* Endless text ticker under the hero */
 @keyframes marquee { to { transform: translateX(-50%); } }
-@keyframes card-shake {
-  20% { transform: translateX(-3px) rotate(-0.25deg); }
-  40% { transform: translateX(3px) rotate(0.25deg); }
-  60% { transform: translateX(-2px); }
-  80% { transform: translateX(2px); }
-}
 
 @layer components {
   .marquee { @apply overflow-hidden border-y border-base-300 bg-base-200 py-5; }
@@ -121,5 +114,4 @@
 
 @media (prefers-reduced-motion: reduce) {
   .marquee-track, .logo-track { animation: none; }
-  .brand-card:hover { animation: none; }
 }

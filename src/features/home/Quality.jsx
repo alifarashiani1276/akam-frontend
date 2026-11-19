@@ -7,30 +7,32 @@ const EASE = [0.22, 1, 0.36, 1]
 const ITEM = { hidden: { opacity: 0, y: 12 }, visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: EASE } } }
 const LINE = { hidden: { scaleX: 0 }, visible: { scaleX: 1, transition: { duration: 0.9, ease: EASE } } }
 
-// Full-width photo (parallax on scroll). The machine is on the right of the photo, so the text always sits on the
-// empty LEFT side in every language (left edge in LTR, left side in RTL), never on top of the machine.
+// Full-width photo (parallax on scroll). The text sits at the start side (left in LTR, right in RTL) on the empty part
+// of the photo; the photo is mirrored in RTL so the machine is always on the opposite side.
+// key={i18n.language} remounts the list on language change so its entrance animation plays again (otherwise new items stay hidden).
 // Each list item fades in and its underline draws across.
 export default function Quality() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const items = t('quality.items', { returnObjects: true })
   const ref = useRef(null)
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start end', 'end start'] })
   const imageY = useTransform(scrollYProgress, [0, 1], ['-6%', '6%'])
 
   return (
-    <section ref={ref} id="quality" className="relative isolate flex min-h-[32rem] scroll-mt-20 items-center overflow-hidden py-16">
+    <section ref={ref} id="quality" className="relative isolate flex min-h-[40rem] scroll-mt-20 md:min-h-[125svh] items-center overflow-hidden py-16">
       <motion.img
         src="/images/quality.webp"
         alt=""
         loading="lazy"
         style={{ y: imageY }}
-        className="absolute inset-x-0 -top-[10%] -z-20 h-[120%] w-full object-cover"
+        className="absolute inset-x-0 -top-[10%] -z-20 h-[120%] w-full object-cover rtl:-scale-x-100"
       />
-      <div className="absolute inset-0 -z-10 bg-linear-to-r from-black/60 via-black/20 to-transparent" />
-      <div className="container-page flex justify-start rtl:justify-end">
-        <div className="max-w-xs">
+      <div className="absolute inset-0 -z-10 bg-linear-to-r from-black/60 via-black/20 to-transparent rtl:bg-linear-to-l" />
+      <div className="container-page flex justify-start">
+        <div className="max-w-xs md:ms-12 xl:ms-24">
           <TextReveal as="h2" text={t('quality.title')} className="mb-8 block text-4xl font-extrabold leading-snug text-primary md:text-5xl" />
           <motion.ul
+            key={i18n.language}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: '-80px' }}

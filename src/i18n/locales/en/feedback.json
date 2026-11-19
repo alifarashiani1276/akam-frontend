@@ -1,0 +1,38 @@
+{
+  "feedback": {
+    "label": "Testimonial",
+    "title": "Trusted delivery",
+    "items": [
+      {
+        "name": "Michael Anderson",
+        "role": "Head of Operations",
+        "quote": "“Our operation improved significantly after working with the AKAM team. Their expertise in industrial equipment helped us reduce downtime and improve delivery coordination across complex projects.”",
+        "stats": [
+          {
+            "label": "Lower downtime",
+            "value": "47%"
+          },
+          {
+            "label": "Faster delivery",
+            "value": "2.8x"
+          }
+        ]
+      },
+      {
+        "name": "Daniel Brooks",
+        "role": "Technical Director",
+        "quote": "“Our custom machine was built and commissioned exactly to the drawings and on the agreed schedule. After-sales support was always available.”",
+        "stats": [
+          {
+            "label": "Lower maintenance cost",
+            "value": "35%"
+          },
+          {
+            "label": "Higher productivity",
+            "value": "1.6x"
+          }
+        ]
+      }
+    ]
+  }
+}
