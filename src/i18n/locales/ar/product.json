@@ -1,0 +1,30 @@
+{
+  "productPage": {
+    "eyebrow": "نظرة عامة ومواصفات المنتج",
+    "exportBadge": "للتصدير فقط",
+    "exportNotice": "يُعرض هذا المنتج حاليًا لأسواق التصدير فقط. أرسل طلب تصدير لمناقشة شروط الشراء.",
+    "requestQuote": "طلب عرض سعر",
+    "introduction": "مقدمة المنتج",
+    "applications": "الاستخدامات",
+    "industries": "الصناعات المستهدفة",
+    "advantages": "المزايا",
+    "specifications": "المواصفات الفنية",
+    "specLabel": "المواصفة",
+    "specValue": "القيمة",
+    "specUnit": "الوحدة",
+    "models": "طرازات المنتج",
+    "selectModel": "اختر الطراز",
+    "gallery": "معرض الصور والفيديو",
+    "video": "فيديو",
+    "openMedia": "فتح الوسائط {{index}}",
+    "close": "إغلاق",
+    "previousMedia": "الوسائط السابقة",
+    "nextMedia": "الوسائط التالية",
+    "downloadCatalog": "تنزيل كتالوج المنتج",
+    "related": "منتجات ذات صلة",
+    "viewProduct": "عرض المنتج",
+    "breadcrumbLabel": "مسار التنقل",
+    "home": "الرئيسية",
+    "products": "المنتجات والخدمات"
+  }
+}

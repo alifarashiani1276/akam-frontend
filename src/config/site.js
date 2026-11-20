@@ -34,13 +34,12 @@ export const CONTACTS = [
 ]
 export const getVisibleContacts = () => CONTACTS.filter((c) => c.confirmed && c.number)
 
-// Navbar + footer links (labels come from nav.<id> in locales).
-// { id, hash }  -> section on the home page
-// { id, path }  -> a real page, e.g. { id: 'projects', path: 'projects' } -> /<lang>/projects
+// Primary navigation. The products item is rendered as a catalog dropdown by Navbar.
 export const NAV_ITEMS = [
   { id: 'home', path: '' },
-  { id: 'services', hash: 'services' },
-  { id: 'products', hash: 'services' }, // point to real pages later: { id: 'products', path: 'products' }
-  { id: 'about', hash: 'about' },
-  { id: 'contact', hash: 'contact' },
+  { id: 'about', path: 'about' },
+  { id: 'products', path: 'products', dropdown: 'catalog' },
+  { id: 'capabilities', path: 'capabilities' },
+  { id: 'projects', path: 'projects' },
+  { id: 'contact', path: 'contact' },
 ]

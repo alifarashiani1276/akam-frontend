@@ -1,0 +1,44 @@
+{
+  "phones": [
+    {
+      "id": "sales",
+      "label": "Sales",
+      "number": "09200953320",
+      "ext": null,
+      "confirmed": true
+    },
+    {
+      "id": "landline",
+      "label": "Landline",
+      "number": null,
+      "ext": null,
+      "confirmed": false
+    },
+    {
+      "id": "afterSales",
+      "label": "After-sales",
+      "number": null,
+      "ext": "96",
+      "confirmed": false
+    },
+    {
+      "id": "finance",
+      "label": "Finance",
+      "number": null,
+      "ext": "97",
+      "confirmed": false
+    },
+    {
+      "id": "purchase",
+      "label": "Purchasing",
+      "number": null,
+      "ext": "98",
+      "confirmed": false
+    }
+  ],
+  "email": null,
+  "address": null,
+  "postalCode": null,
+  "social": [],
+  "chat_enabled": true
+}

@@ -1,0 +1,48 @@
+[
+  {
+    "id": "project-mineral-processing",
+    "slug": "khatt-faravari-maadani",
+    "title": "تجهیزات خط فرآوری مواد معدنی",
+    "intro": "طراحی و ساخت مجموعه‌ای از تجهیزات خردایش و انتقال مواد برای استفاده در خطوط فرآوری.",
+    "text": "طراحی و ساخت مجموعه‌ای از تجهیزات خردایش و انتقال مواد برای استفاده در خطوط فرآوری.",
+    "image": "/images/card-1.webp",
+    "section_ids": [
+      "mining"
+    ],
+    "export_only": false,
+    "alternates": {
+      "fa": "khatt-faravari-maadani",
+      "en": "mineral-processing-line",
+      "ru": "liniya-pererabotki-mineralov",
+      "ar": "خط-معالجة-المعادن"
+    },
+    "meta": {
+      "title": "تجهیزات خط فرآوری مواد معدنی",
+      "description": "طراحی و ساخت مجموعه‌ای از تجهیزات خردایش و انتقال مواد برای استفاده در خطوط فرآوری."
+    },
+    "operations": "طراحی و ساخت مجموعه‌ای از تجهیزات خردایش و انتقال مواد برای استفاده در خطوط فرآوری."
+  },
+  {
+    "id": "project-agri-leveling",
+    "slug": "tasviye-zamin-keshavarzi",
+    "title": "تأمین ماشین‌آلات تسطیح کشاورزی",
+    "intro": "نمونه پروژه صادراتی ماشین‌آلات تسطیح زمین با سامانه کنترل لیزری و ماهواره‌ای.",
+    "text": "نمونه پروژه صادراتی ماشین‌آلات تسطیح زمین با سامانه کنترل لیزری و ماهواره‌ای.",
+    "image": "/images/card-4.webp",
+    "section_ids": [
+      "agri"
+    ],
+    "export_only": true,
+    "alternates": {
+      "fa": "tasviye-zamin-keshavarzi",
+      "en": "agricultural-land-leveling",
+      "ru": "planirovka-selhozugodiy",
+      "ar": "تسوية-الأراضي-الزراعية"
+    },
+    "meta": {
+      "title": "تأمین ماشین‌آلات تسطیح کشاورزی",
+      "description": "نمونه پروژه صادراتی ماشین‌آلات تسطیح زمین با سامانه کنترل لیزری و ماهواره‌ای."
+    },
+    "operations": "نمونه پروژه صادراتی ماشین‌آلات تسطیح زمین با سامانه کنترل لیزری و ماهواره‌ای."
+  }
+]

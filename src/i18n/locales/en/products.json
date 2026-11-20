@@ -1,0 +1,25 @@
+{
+  "products": {
+    "breadcrumbLabel": "Breadcrumb",
+    "home": "Home",
+    "title": "Products & Services",
+    "eyebrow": "AKAM Machine solutions",
+    "intro": "From mineral processing equipment to machinery and engineering services, explore AKAM Machine solutions by field of application.",
+    "sectionEyebrow": "Our fields",
+    "subcategoryEyebrow": "Products and services in this field",
+    "exportBadge": "Export only",
+    "exportShort": "This product group is currently offered for export markets.",
+    "exportDescription": "At present, sales and supply from this category are focused exclusively on export markets.",
+    "viewSection": "Explore subcategories",
+    "viewSubcategory": "Explore products and services",
+    "viewDetails": "View details",
+    "productType": "Product",
+    "serviceType": "Service",
+    "noItemsTitle": "Nothing to display yet",
+    "noItemsText": "No product or service has been listed in this subcategory yet.",
+    "pagination": "List pagination",
+    "previous": "Previous",
+    "next": "Next",
+    "pageOf": "Page {{page}} of {{total}}"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "servicePage": {
+    "eyebrow": "خدمات مهندسی آکام",
+    "breadcrumbLabel": "مسیر صفحه",
+    "home": "خانه",
+    "services": "خدمات",
+    "description": "شرح خدمت",
+    "applicationArea": "حوزه کاربرد",
+    "process": "مراحل اجرا",
+    "capabilities": "توانمندی‌های فنی",
+    "projects": "نمونه پروژه‌ها",
+    "beforeAfter": "مقایسه قبل و بعد",
+    "before": "قبل",
+    "after": "بعد",
+    "sliderHint": "دستگیره را با ماوس، لمس یا کلیدهای جهت‌دار حرکت دهید تا تصاویر را مقایسه کنید.",
+    "comparisonControl": "کنترل مقایسه تصویر شماره {{index}}",
+    "viewProject": "مشاهده پروژه"
+  }
+}

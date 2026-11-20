@@ -1,0 +1,15 @@
+{
+  "chat": {
+    "title": "AKAM Assistant",
+    "subtitle": "AKAM Machine AI assistant",
+    "welcome": "Hello! Ask me about AKAM Machine products and services, or how to submit an inquiry.",
+    "suggestions": ["Request a quotation", "Mining products", "Contact sales"],
+    "placeholder": "Write your message...",
+    "send": "Send message",
+    "stop": "Stop response",
+    "newChat": "New conversation",
+    "typing": "Assistant is typing...",
+    "disclaimer": "This is an AI assistant and may make mistakes. Please contact Sales for final prices and specifications.",
+    "errors": { "rate": "Too many messages. Please try again shortly.", "network": "The network connection was interrupted. Check your connection.", "server": "Something went wrong. Please try again.", "retry": "Try again" }
+  }
+}

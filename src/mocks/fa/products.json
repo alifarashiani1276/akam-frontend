@@ -1,0 +1,158 @@
+[
+  {
+    "id": "product-crusher",
+    "slug": "sang-shekan",
+    "name": "سنگ‌شکن فکی دابل توگل",
+    "intro": "تجهیزات خردایش مواد سخت و سنگین",
+    "image": "/images/card-1.webp",
+    "applications": [
+      "مناسب خطوط فرآوری فروآلیاژها و مواد معدنی"
+    ],
+    "industries": [
+      "معدن و فرآوری مواد معدنی"
+    ],
+    "advantages": [
+      "طراحی متناسب با شرایط کاری"
+    ],
+    "specs": [
+      {
+        "group": "مشخصات فنی",
+        "label": "ظرفیت",
+        "value": "[نیازمند تأیید]",
+        "unit": null
+      }
+    ],
+    "models": [],
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/images/card-1.webp",
+        "alt": "سنگ‌شکن فکی دابل توگل"
+      }
+    ],
+    "catalog_file": null,
+    "related": [],
+    "section_ids": [
+      "mining"
+    ],
+    "export_only": false,
+    "meta": {
+      "title": "سنگ‌شکن فکی دابل توگل",
+      "description": "سنگ‌شکن فکی دابل توگل برای خردایش مواد معدنی سخت و سنگین در مدارهای فرآوری طراحی می‌شود."
+    },
+    "alternates": {
+      "fa": "sang-shekan",
+      "en": "crushing-equipment",
+      "ru": "drobilnoe-oborudovanie",
+      "ar": "معدات-التكسير"
+    },
+    "text": "سنگ‌شکن فکی دابل توگل برای خردایش مواد معدنی سخت و سنگین در مدارهای فرآوری طراحی می‌شود.",
+    "subcategory_ids": [
+      "crushing"
+    ]
+  },
+  {
+    "id": "product-screen",
+    "slug": "sarand",
+    "name": "سرند صنعتی",
+    "intro": "تجهیزات دانه‌بندی مواد معدنی",
+    "image": "/images/card-1.webp",
+    "applications": [
+      "قابل طراحی متناسب با ظرفیت و دانه‌بندی موردنیاز"
+    ],
+    "industries": [
+      "معدن و فرآوری مواد معدنی"
+    ],
+    "advantages": [
+      "طراحی متناسب با شرایط کاری"
+    ],
+    "specs": [
+      {
+        "group": "مشخصات فنی",
+        "label": "ظرفیت",
+        "value": "[نیازمند تأیید]",
+        "unit": null
+      }
+    ],
+    "models": [],
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/images/card-1.webp",
+        "alt": "سرند صنعتی"
+      }
+    ],
+    "catalog_file": null,
+    "related": [],
+    "section_ids": [
+      "mining"
+    ],
+    "export_only": false,
+    "meta": {
+      "title": "سرند صنعتی",
+      "description": "سرند صنعتی برای جداسازی و طبقه‌بندی مواد بر اساس اندازه در مراحل مختلف فرآوری به‌کار می‌رود."
+    },
+    "alternates": {
+      "fa": "sarand",
+      "en": "screening-equipment",
+      "ru": "grohoty",
+      "ar": "معدات-التدريج"
+    },
+    "text": "سرند صنعتی برای جداسازی و طبقه‌بندی مواد بر اساس اندازه در مراحل مختلف فرآوری به‌کار می‌رود.",
+    "subcategory_ids": [
+      "screening"
+    ]
+  },
+  {
+    "id": "product-laser-leveler",
+    "slug": "land-leveler-laser",
+    "name": "لند لولر لیزری",
+    "intro": "ماشین‌آلات تسطیح زمین",
+    "image": "/images/card-4.webp",
+    "applications": [
+      "محصول صادراتی؛ مشخصات فنی نهایی بر اساس سفارش"
+    ],
+    "industries": [
+      "معدن و فرآوری مواد معدنی"
+    ],
+    "advantages": [
+      "طراحی متناسب با شرایط کاری"
+    ],
+    "specs": [
+      {
+        "group": "مشخصات فنی",
+        "label": "ظرفیت",
+        "value": "[نیازمند تأیید]",
+        "unit": null
+      }
+    ],
+    "models": [],
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/images/card-4.webp",
+        "alt": "لند لولر لیزری"
+      }
+    ],
+    "catalog_file": null,
+    "related": [],
+    "section_ids": [
+      "agri"
+    ],
+    "export_only": true,
+    "meta": {
+      "title": "لند لولر لیزری",
+      "description": "لند لولر لیزری با دریافت اطلاعات سامانه کنترل لیزری، عملیات تسطیح دقیق زمین را انجام می‌دهد."
+    },
+    "alternates": {
+      "fa": "land-leveler-laser",
+      "en": "laser-land-leveler",
+      "ru": "lazernyy-planirovshchik",
+      "ar": "تسوية-ليزرية"
+    },
+    "text": "لند لولر لیزری با دریافت اطلاعات سامانه کنترل لیزری، عملیات تسطیح دقیق زمین را انجام می‌دهد.",
+    "subcategory_ids": [
+      "laserLeveler"
+    ]
+  }
+]

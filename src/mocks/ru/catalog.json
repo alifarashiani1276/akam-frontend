@@ -1,0 +1,274 @@
+[
+  {
+    "id": "mining",
+    "slug": "gornoe-oborudovanie",
+    "image": "/images/card-1.webp",
+    "export_only": false,
+    "title": "Горное оборудование и оборудование для переработки минерального сырья",
+    "short": "Горное оборудование",
+    "text": "Проектирование и изготовление оборудования для транспортировки, дробления, классификации и разделения минерального сырья с акцентом на твёрдые и тяжёлые материалы: феррохром, ферромарганец, ферросплавы и промышленные шлаки.",
+    "alternates": {
+      "fa": "maadani",
+      "en": "mining-machinery",
+      "ru": "gornoe-oborudovanie",
+      "ar": "معدات-التعدين"
+    },
+    "items": [
+      {
+        "id": "crushing",
+        "slug": "drobilnoe-oborudovanie",
+        "title": "Дробильное оборудование",
+        "text": "Дробильное оборудование: щёковые дробилки Double Toggle и оборудование для дробления твёрдых и тяжёлых материалов.",
+        "alternates": {
+          "fa": "sang-shekan",
+          "en": "crushing-equipment",
+          "ru": "drobilnoe-oborudovanie",
+          "ar": "معدات-التكسير"
+        }
+      },
+      {
+        "id": "screening",
+        "slug": "grohoty",
+        "title": "Оборудование для классификации",
+        "text": "Оборудование для классификации: промышленные грохоты и оборудование для разделения материалов по крупности.",
+        "alternates": {
+          "fa": "sarand",
+          "en": "screening-equipment",
+          "ru": "grohoty",
+          "ar": "معدات-التدريج"
+        }
+      },
+      {
+        "id": "gravity",
+        "slug": "gravitacionnoe-obogashchenie",
+        "title": "Гравитационное обогащение",
+        "text": "Гравитационное обогащение: отсадочные машины и концентрационные столы.",
+        "alternates": {
+          "fa": "jig",
+          "en": "gravity-separation",
+          "ru": "gravitacionnoe-obogashchenie",
+          "ar": "الفصل-الثقلي"
+        }
+      },
+      {
+        "id": "conveying",
+        "slug": "transportirovka",
+        "title": "Транспортное оборудование",
+        "text": "Транспортное оборудование: питатели и оборудование для перемещения материалов между этапами переработки.",
+        "alternates": {
+          "fa": "enteghal",
+          "en": "material-conveying",
+          "ru": "transportirovka",
+          "ar": "نقل-المواد"
+        }
+      },
+      {
+        "id": "lines",
+        "slug": "linii-pererabotki",
+        "title": "Комплексное оборудование линий дробления и переработки",
+        "text": "Комплексное оборудование линий дробления и переработки.",
+        "alternates": {
+          "fa": "khatt-faravari",
+          "en": "processing-lines",
+          "ru": "linii-pererabotki",
+          "ar": "خطوط-المعالجة"
+        }
+      }
+    ]
+  },
+  {
+    "id": "industrial",
+    "slug": "prom-oborudovanie",
+    "image": "/images/card-2.webp",
+    "export_only": false,
+    "title": "Промышленное оборудование, машины и детали",
+    "short": "Промышленное оборудование",
+    "text": "Изготовление машин, оборудования и деталей для производственных линий заводов без привязки к одной отрасли, включая сталелитейные, цементные и ферросплавные предприятия.",
+    "alternates": {
+      "fa": "sanati",
+      "en": "industrial-equipment",
+      "ru": "prom-oborudovanie",
+      "ar": "المعدات-الصناعية"
+    },
+    "items": [
+      {
+        "id": "molten",
+        "slug": "kovshi-rasplava",
+        "title": "Транспортировка расплава",
+        "text": "Транспортировка расплава: ковши для перевозки расплава и сопутствующее оборудование.",
+        "alternates": {
+          "fa": "patil-mozab",
+          "en": "molten-metal-handling",
+          "ru": "kovshi-rasplava",
+          "ar": "نقل-المعدن-المنصهر"
+        }
+      },
+      {
+        "id": "handling",
+        "slug": "peremeshchenie-materialov",
+        "title": "Перемещение материалов",
+        "text": "Перемещение материалов: промышленные крюки, оборудование для перемещения материалов на плавильных линиях и готовой продукции.",
+        "alternates": {
+          "fa": "haml-mavad",
+          "en": "material-handling",
+          "ru": "peremeshchenie-materialov",
+          "ar": "مناولة-المواد"
+        }
+      },
+      {
+        "id": "dust",
+        "slug": "pyleulavlivanie",
+        "title": "Промышленное пылеулавливание",
+        "text": "Промышленное пылеулавливание: пылеулавливающие циклоны и сопутствующие детали.",
+        "alternates": {
+          "fa": "ghobar-gir",
+          "en": "dust-collection",
+          "ru": "pyleulavlivanie",
+          "ar": "إزالة-الغبار"
+        }
+      },
+      {
+        "id": "parts",
+        "slug": "promdetali",
+        "title": "Детали и оборудование производственных линий",
+        "text": "Детали и оборудование производственных линий: детали на заказ, механические узлы и специальное оборудование.",
+        "alternates": {
+          "fa": "ghateat",
+          "en": "industrial-parts",
+          "ru": "promdetali",
+          "ar": "القطع-الصناعية"
+        }
+      }
+    ]
+  },
+  {
+    "id": "engineering",
+    "slug": "inzhiniring",
+    "image": "/images/card-3.webp",
+    "export_only": false,
+    "title": "Инжиниринг, проектирование и восстановление оборудования",
+    "short": "Инжиниринг и восстановление",
+    "text": "Превращаем потребность заказчика в инженерное решение, изготавливаем специальные машины, выполняем реверс-инжиниринг и восстановление существующего оборудования.",
+    "alternates": {
+      "fa": "mohandesi",
+      "en": "engineering-services",
+      "ru": "inzhiniring",
+      "ar": "الخدمات-الهندسية"
+    },
+    "items": [
+      {
+        "id": "custom",
+        "slug": "spetsialnye-mashiny",
+        "title": "Специальные машины",
+        "text": "Специальные машины: приём требований, 3D-моделирование, чертежи, изготовление, сборка и испытания.",
+        "alternates": {
+          "fa": "tarahi-sakht",
+          "en": "custom-machine-design",
+          "ru": "spetsialnye-mashiny",
+          "ar": "تصميم-الآلات-الخاصة"
+        }
+      },
+      {
+        "id": "reverse",
+        "slug": "revers-inzhiniring",
+        "title": "Реверс-инжиниринг и модернизация",
+        "text": "Реверс-инжиниринг и модернизация: изучение образца, анализ работы, выявление дефектов, корректировка конструкции и изготовление.",
+        "alternates": {
+          "fa": "mohandesi-makoos",
+          "en": "reverse-engineering",
+          "ru": "revers-inzhiniring",
+          "ar": "الهندسة-العكسية"
+        }
+      },
+      {
+        "id": "rebuild",
+        "slug": "vosstanovlenie-tehniki",
+        "title": "Восстановление тяжёлой и горной техники",
+        "text": "Восстановление тяжёлой и горной техники: конструкции погрузчиков и экскаваторов, гидроцилиндры, восстановление и усиление ковшей.",
+        "alternates": {
+          "fa": "bazsazi",
+          "en": "machinery-rebuilding",
+          "ru": "vosstanovlenie-tehniki",
+          "ar": "إعادة-التأهيل"
+        }
+      },
+      {
+        "id": "parts",
+        "slug": "promdetali",
+        "title": "Промышленные детали",
+        "text": "Промышленные детали: капитальный ремонт механических узлов, сменные детали и модернизация оборудования.",
+        "alternates": {
+          "fa": "ghateat",
+          "en": "industrial-parts",
+          "ru": "promdetali",
+          "ar": "القطع-الصناعية"
+        }
+      }
+    ]
+  },
+  {
+    "id": "agri",
+    "slug": "selhoztehnika",
+    "image": "/images/card-4.webp",
+    "export_only": true,
+    "title": "Сельскохозяйственная техника на экспорт",
+    "short": "Сельхозтехника",
+    "text": "Машины для планировки земли с лазерными и спутниковыми системами управления, предлагаются на экспорт.",
+    "alternates": {
+      "fa": "keshavarzi",
+      "en": "agricultural-machinery",
+      "ru": "selhoztehnika",
+      "ar": "الآلات-الزراعية"
+    },
+    "items": [
+      {
+        "id": "laserLeveler",
+        "slug": "lazernyy-planirovshchik",
+        "title": "Лазерные планировщики земли",
+        "text": "Лазерные планировщики земли.",
+        "alternates": {
+          "fa": "land-leveler-laser",
+          "en": "laser-land-leveler",
+          "ru": "lazernyy-planirovshchik",
+          "ar": "تسوية-ليزرية"
+        }
+      },
+      {
+        "id": "gnssLeveler",
+        "slug": "sputnikovyy-planirovshchik",
+        "title": "Спутниковые (GPS/GNSS) планировщики земли",
+        "text": "Спутниковые (GPS/GNSS) планировщики земли.",
+        "alternates": {
+          "fa": "land-leveler-gnss",
+          "en": "gnss-land-leveler",
+          "ru": "sputnikovyy-planirovshchik",
+          "ar": "تسوية-فضائية"
+        }
+      },
+      {
+        "id": "laserScraper",
+        "slug": "lazernyy-skreper",
+        "title": "Лазерные скреперы",
+        "text": "Лазерные скреперы.",
+        "alternates": {
+          "fa": "scraper-laser",
+          "en": "laser-scraper",
+          "ru": "lazernyy-skreper",
+          "ar": "سكريبر-ليزري"
+        }
+      },
+      {
+        "id": "gnssScraper",
+        "slug": "sputnikovyy-skreper",
+        "title": "Спутниковые (GPS/GNSS) скреперы",
+        "text": "Спутниковые (GPS/GNSS) скреперы.",
+        "alternates": {
+          "fa": "scraper-gnss",
+          "en": "gnss-scraper",
+          "ru": "sputnikovyy-skreper",
+          "ar": "سكريبر-فضائي"
+        }
+      }
+    ]
+  }
+]

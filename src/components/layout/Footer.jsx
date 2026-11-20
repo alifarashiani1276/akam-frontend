@@ -1,13 +1,16 @@
 import { useTranslation } from 'react-i18next'
-import { NAV_ITEMS, SITE, getVisibleContacts } from '../../config/site'
+import { NAV_ITEMS } from '../../config/site'
+import { useSettings } from '../../features/settings/useSettings'
 import Logo from '../ui/Logo'
 import NavItem from './NavItem'
 import SectionBackground from '../ui/SectionBackground'
 
 export default function Footer() {
   const { t, i18n } = useTranslation()
+  const { data: settings } = useSettings(i18n.language)
   const year = new Intl.NumberFormat(i18n.language, { useGrouping: false }).format(new Date().getFullYear())
-  const contacts = getVisibleContacts()
+  const contacts = (settings?.phones ?? []).filter((phone) => phone.confirmed && phone.number)
+  const social = settings?.social ?? []
 
   return (
     <footer className="relative isolate overflow-hidden bg-base-200 pb-8 pt-16">
@@ -34,23 +37,19 @@ export default function Footer() {
         <div>
           <h6 className="footer-title">{t('footer.contact')}</h6>
           <ul className="space-y-2">
-            {contacts.map((c) => (
-              <li key={c.id}>
-                {t(`contactLabels.${c.id}`)}: <span dir="ltr">{c.number}</span>
+            {contacts.map((phone) => (
+              <li key={phone.id}>
+                {phone.label || t(`contactLabels.${phone.id}`)}: <span dir="ltr">{phone.number}</span>
               </li>
             ))}
-            {SITE.email && (
-              <li dir="ltr" className="text-start">{SITE.email}</li>
+            {settings?.email && <li dir="ltr" className="text-start">{settings.email}</li>}
+            {settings?.address && <li>{settings.address}</li>}
+            {settings?.postalCode && (
+              <li>{t('footer.postalCode')}: <span dir="ltr">{settings.postalCode}</span></li>
             )}
-            <li>{t('footer.address')}</li>
-            <li>
-              {t('footer.postalCode')}: <span dir="ltr">{SITE.postalCode}</span>
-            </li>
-            {SITE.social.map(({ label, href }) => (
+            {social.map(({ label, href }) => (
               <li key={label}>
-                <a href={href} className="link link-hover">
-                  {label}
-                </a>
+                <a href={href} className="link link-hover">{label}</a>
               </li>
             ))}
           </ul>

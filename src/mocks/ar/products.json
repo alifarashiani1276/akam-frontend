@@ -1,0 +1,158 @@
+[
+  {
+    "id": "product-crusher",
+    "slug": "معدات-التكسير",
+    "name": "كسارة فكية Double Toggle",
+    "intro": "معدات تكسير المواد الصلبة والثقيلة",
+    "image": "/images/card-1.webp",
+    "applications": [
+      "مناسبة لخطوط معالجة الفروسبائك والمعادن"
+    ],
+    "industries": [
+      "التعدين ومعالجة المعادن"
+    ],
+    "advantages": [
+      "تصميم وفق ظروف التشغيل"
+    ],
+    "specs": [
+      {
+        "group": "المواصفات الفنية",
+        "label": "السعة",
+        "value": "[نیازمند تأیید]",
+        "unit": null
+      }
+    ],
+    "models": [],
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/images/card-1.webp",
+        "alt": "كسارة فكية Double Toggle"
+      }
+    ],
+    "catalog_file": null,
+    "related": [],
+    "section_ids": [
+      "mining"
+    ],
+    "export_only": false,
+    "meta": {
+      "title": "كسارة فكية Double Toggle",
+      "description": "كسارة فكية Double Toggle مصممة لتكسير الخامات المعدنية الصلبة والثقيلة ضمن دوائر المعالجة."
+    },
+    "alternates": {
+      "fa": "sang-shekan",
+      "en": "crushing-equipment",
+      "ru": "drobilnoe-oborudovanie",
+      "ar": "معدات-التكسير"
+    },
+    "text": "كسارة فكية Double Toggle مصممة لتكسير الخامات المعدنية الصلبة والثقيلة ضمن دوائر المعالجة.",
+    "subcategory_ids": [
+      "crushing"
+    ]
+  },
+  {
+    "id": "product-screen",
+    "slug": "معدات-التدريج",
+    "name": "غربال صناعي",
+    "intro": "معدات تدريج المعادن",
+    "image": "/images/card-1.webp",
+    "applications": [
+      "يمكن تصميمه وفق الطاقة الإنتاجية والتدرج المطلوب"
+    ],
+    "industries": [
+      "التعدين ومعالجة المعادن"
+    ],
+    "advantages": [
+      "تصميم وفق ظروف التشغيل"
+    ],
+    "specs": [
+      {
+        "group": "المواصفات الفنية",
+        "label": "السعة",
+        "value": "[نیازمند تأیید]",
+        "unit": null
+      }
+    ],
+    "models": [],
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/images/card-1.webp",
+        "alt": "غربال صناعي"
+      }
+    ],
+    "catalog_file": null,
+    "related": [],
+    "section_ids": [
+      "mining"
+    ],
+    "export_only": false,
+    "meta": {
+      "title": "غربال صناعي",
+      "description": "يُستخدم الغربال الصناعي لفصل المواد وتصنيفها حسب الحجم خلال مراحل المعالجة."
+    },
+    "alternates": {
+      "fa": "sarand",
+      "en": "screening-equipment",
+      "ru": "grohoty",
+      "ar": "معدات-التدريج"
+    },
+    "text": "يُستخدم الغربال الصناعي لفصل المواد وتصنيفها حسب الحجم خلال مراحل المعالجة.",
+    "subcategory_ids": [
+      "screening"
+    ]
+  },
+  {
+    "id": "product-laser-leveler",
+    "slug": "تسوية-ليزرية",
+    "name": "آلة تسوية الأراضي بالليزر",
+    "intro": "آلات تسوية الأراضي",
+    "image": "/images/card-4.webp",
+    "applications": [
+      "منتج للتصدير؛ تحدد المواصفات النهائية حسب الطلب"
+    ],
+    "industries": [
+      "التعدين ومعالجة المعادن"
+    ],
+    "advantages": [
+      "تصميم وفق ظروف التشغيل"
+    ],
+    "specs": [
+      {
+        "group": "المواصفات الفنية",
+        "label": "السعة",
+        "value": "[نیازمند تأیید]",
+        "unit": null
+      }
+    ],
+    "models": [],
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/images/card-4.webp",
+        "alt": "آلة تسوية الأراضي بالليزر"
+      }
+    ],
+    "catalog_file": null,
+    "related": [],
+    "section_ids": [
+      "agri"
+    ],
+    "export_only": true,
+    "meta": {
+      "title": "آلة تسوية الأراضي بالليزر",
+      "description": "تستخدم آلة تسوية الأراضي نظام تحكم ليزرياً لدعم عمليات التسوية الدقيقة."
+    },
+    "alternates": {
+      "fa": "land-leveler-laser",
+      "en": "laser-land-leveler",
+      "ru": "lazernyy-planirovshchik",
+      "ar": "تسوية-ليزرية"
+    },
+    "text": "تستخدم آلة تسوية الأراضي نظام تحكم ليزرياً لدعم عمليات التسوية الدقيقة.",
+    "subcategory_ids": [
+      "laserLeveler"
+    ]
+  }
+]

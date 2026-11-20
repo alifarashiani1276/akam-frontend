@@ -1,0 +1,44 @@
+{
+  "phones": [
+    {
+      "id": "sales",
+      "label": "فروش",
+      "number": "09200953320",
+      "ext": null,
+      "confirmed": true
+    },
+    {
+      "id": "landline",
+      "label": "تلفن ثابت",
+      "number": null,
+      "ext": null,
+      "confirmed": false
+    },
+    {
+      "id": "afterSales",
+      "label": "خدمات پس از فروش",
+      "number": null,
+      "ext": "96",
+      "confirmed": false
+    },
+    {
+      "id": "finance",
+      "label": "امور مالی",
+      "number": null,
+      "ext": "97",
+      "confirmed": false
+    },
+    {
+      "id": "purchase",
+      "label": "تدارکات",
+      "number": null,
+      "ext": "98",
+      "confirmed": false
+    }
+  ],
+  "email": null,
+  "address": null,
+  "postalCode": null,
+  "social": [],
+  "chat_enabled": true
+}

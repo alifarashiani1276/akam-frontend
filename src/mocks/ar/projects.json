@@ -1,0 +1,48 @@
+[
+  {
+    "id": "project-mineral-processing",
+    "slug": "خط-معالجة-المعادن",
+    "title": "معدات خط معالجة المعادن",
+    "intro": "تصميم وتصنيع معدات التكسير ونقل المواد لخطوط معالجة المعادن.",
+    "text": "تصميم وتصنيع معدات التكسير ونقل المواد لخطوط معالجة المعادن.",
+    "image": "/images/card-1.webp",
+    "section_ids": [
+      "mining"
+    ],
+    "export_only": false,
+    "alternates": {
+      "fa": "khatt-faravari-maadani",
+      "en": "mineral-processing-line",
+      "ru": "liniya-pererabotki-mineralov",
+      "ar": "خط-معالجة-المعادن"
+    },
+    "meta": {
+      "title": "معدات خط معالجة المعادن",
+      "description": "تصميم وتصنيع معدات التكسير ونقل المواد لخطوط معالجة المعادن."
+    },
+    "operations": "تصميم وتصنيع معدات التكسير ونقل المواد لخطوط معالجة المعادن."
+  },
+  {
+    "id": "project-agri-leveling",
+    "slug": "تسوية-الأراضي-الزراعية",
+    "title": "توريد آلات تسوية الأراضي الزراعية",
+    "intro": "مثال لمشروع تصديري لآلات تسوية الأراضي بأنظمة تحكم ليزرية وفضائية.",
+    "text": "مثال لمشروع تصديري لآلات تسوية الأراضي بأنظمة تحكم ليزرية وفضائية.",
+    "image": "/images/card-4.webp",
+    "section_ids": [
+      "agri"
+    ],
+    "export_only": true,
+    "alternates": {
+      "fa": "tasviye-zamin-keshavarzi",
+      "en": "agricultural-land-leveling",
+      "ru": "planirovka-selhozugodiy",
+      "ar": "تسوية-الأراضي-الزراعية"
+    },
+    "meta": {
+      "title": "توريد آلات تسوية الأراضي الزراعية",
+      "description": "مثال لمشروع تصديري لآلات تسوية الأراضي بأنظمة تحكم ليزرية وفضائية."
+    },
+    "operations": "مثال لمشروع تصديري لآلات تسوية الأراضي بأنظمة تحكم ليزرية وفضائية."
+  }
+]

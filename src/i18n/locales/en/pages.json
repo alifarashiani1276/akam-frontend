@@ -1,0 +1,132 @@
+{
+  "staticPages": {
+    "about": {
+      "title": "About AKAM Machine",
+      "eyebrow": "About the company",
+      "breadcrumbLabel": "About page navigation",
+      "home": "Home",
+      "intro": "AKAM Machine began operating in 2019 (Iranian calendar: 1398) at Shahrud Industrial Estate, focusing on engineering design and the manufacture of industrial and mining machinery and equipment.",
+      "text": "The company’s work includes engineering design, manufacturing industrial and mining machinery and equipment, custom production, and equipment refurbishment. Depending on each project, AKAM Machine works from requirement review and design through manufacturing, assembly, and quality control.",
+      "storyTitle": "What we do",
+      "capabilitiesTitle": "In-house processes and capabilities",
+      "capabilities": [
+        "Engineering design and 3D design",
+        "Machining",
+        "Steel structure fabrication",
+        "Welding",
+        "Hydraulic systems",
+        "Industrial electrical work",
+        "Equipment assembly",
+        "Quality control"
+      ],
+      "factsTitle": "Company information",
+      "locationLabel": "Location",
+      "location": "Shahrud Industrial Estate, Iran",
+      "workshopLabel": "Workshop area",
+      "workshop": "Approximately 1,000 m²",
+      "teamLabel": "Workforce",
+      "team": "10 permanent employees and approximately 25 project-based workers",
+      "establishedLabel": "Established",
+      "established": "2019 (1398 in the Iranian calendar)",
+      "outsourcingTitle": "Specialist outsourced services",
+      "outsourcingIntro": "Depending on project requirements, certain specialist operations are assigned to specialist contractors.",
+      "outsourced": [
+        "Heat treatment",
+        "Large gantry machining",
+        "Precision gear cutting"
+      ]
+    },
+    "capabilities": {
+      "title": "Manufacturing Capabilities",
+      "eyebrow": "Production capabilities",
+      "breadcrumbLabel": "Capabilities page navigation",
+      "home": "Home",
+      "intro": "AKAM Machine’s capabilities cover the workflow from engineering design to manufacturing, assembly, and quality control of industrial and mining equipment.",
+      "outsourcedTitle": "Outsourced services",
+      "outsourcedIntro": "Certain specialist operations are carried out by specialist contractors. They are not presented as in-house workshop capabilities.",
+      "items": [
+        {
+          "icon": "design",
+          "title": "Engineering design",
+          "description": "Turning project requirements into engineering solutions and drawings."
+        },
+        {
+          "icon": "model",
+          "title": "3D design",
+          "description": "Three-dimensional modelling of required parts and assemblies."
+        },
+        {
+          "icon": "machining",
+          "title": "Machining",
+          "description": "Machining components required for manufacturing and assembly."
+        },
+        {
+          "icon": "steel",
+          "title": "Steel fabrication",
+          "description": "Fabrication of steel structures and equipment components."
+        },
+        {
+          "icon": "welding",
+          "title": "Welding",
+          "description": "Welding operations for fabricated assemblies."
+        },
+        {
+          "icon": "hydraulic",
+          "title": "Hydraulics",
+          "description": "Design and implementation of equipment hydraulic systems."
+        },
+        {
+          "icon": "electrical",
+          "title": "Industrial electrical",
+          "description": "Industrial electrical work for machinery."
+        },
+        {
+          "icon": "assembly",
+          "title": "Assembly",
+          "description": "Assembly of manufactured parts and equipment."
+        },
+        {
+          "icon": "quality",
+          "title": "Quality control",
+          "description": "Quality checks during manufacturing and before delivery."
+        }
+      ],
+      "outsourced": [
+        "Heat treatment",
+        "Large gantry machining",
+        "Precision gear cutting"
+      ]
+    },
+    "projects": {
+      "title": "Selected Projects",
+      "eyebrow": "Projects",
+      "breadcrumbLabel": "Projects page navigation",
+      "home": "Home",
+      "intro": "Selected projects recorded for AKAM Machine. Each project page displays the information currently available.",
+      "filterLabel": "Filter projects",
+      "all": "All projects",
+      "viewProject": "View project",
+      "emptyTitle": "No projects in this category",
+      "emptyText": "There are no project examples recorded for this category yet.",
+      "paginationLabel": "Project pagination",
+      "previous": "Previous",
+      "next": "Next",
+      "pageOf": "Page {{page}} of {{total}}"
+    },
+    "project": {
+      "title": "Project details",
+      "eyebrow": "Project example",
+      "breadcrumbLabel": "Project navigation",
+      "home": "Home",
+      "projects": "Selected projects",
+      "requestQuote": "Enquire about this project",
+      "operations": "Scope of work",
+      "technicalInfo": "Technical information",
+      "gallery": "Image gallery",
+      "comparison": "Before and after",
+      "before": "Before",
+      "after": "After",
+      "related": "Related product or service"
+    }
+  }
+}

@@ -1,0 +1,158 @@
+[
+  {
+    "id": "product-crusher",
+    "slug": "drobilnoe-oborudovanie",
+    "name": "Щёковая дробилка Double Toggle",
+    "intro": "Оборудование для дробления твёрдых и тяжёлых материалов",
+    "image": "/images/card-1.webp",
+    "applications": [
+      "Для линий переработки ферросплавов и минерального сырья"
+    ],
+    "industries": [
+      "Горнодобывающая промышленность и переработка минералов"
+    ],
+    "advantages": [
+      "Проектирование с учётом условий эксплуатации"
+    ],
+    "specs": [
+      {
+        "group": "Технические характеристики",
+        "label": "Производительность",
+        "value": "[نیازمند تأیید]",
+        "unit": null
+      }
+    ],
+    "models": [],
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/images/card-1.webp",
+        "alt": "Щёковая дробилка Double Toggle"
+      }
+    ],
+    "catalog_file": null,
+    "related": [],
+    "section_ids": [
+      "mining"
+    ],
+    "export_only": false,
+    "meta": {
+      "title": "Щёковая дробилка Double Toggle",
+      "description": "Щёковая дробилка Double Toggle предназначена для дробления твёрдого и тяжёлого минерального сырья."
+    },
+    "alternates": {
+      "fa": "sang-shekan",
+      "en": "crushing-equipment",
+      "ru": "drobilnoe-oborudovanie",
+      "ar": "معدات-التكسير"
+    },
+    "text": "Щёковая дробилка Double Toggle предназначена для дробления твёрдого и тяжёлого минерального сырья.",
+    "subcategory_ids": [
+      "crushing"
+    ]
+  },
+  {
+    "id": "product-screen",
+    "slug": "grohoty",
+    "name": "Промышленный грохот",
+    "intro": "Оборудование для классификации минералов",
+    "image": "/images/card-1.webp",
+    "applications": [
+      "Проектируется под требуемую производительность и фракцию"
+    ],
+    "industries": [
+      "Горнодобывающая промышленность и переработка минералов"
+    ],
+    "advantages": [
+      "Проектирование с учётом условий эксплуатации"
+    ],
+    "specs": [
+      {
+        "group": "Технические характеристики",
+        "label": "Производительность",
+        "value": "[نیازمند تأیید]",
+        "unit": null
+      }
+    ],
+    "models": [],
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/images/card-1.webp",
+        "alt": "Промышленный грохот"
+      }
+    ],
+    "catalog_file": null,
+    "related": [],
+    "section_ids": [
+      "mining"
+    ],
+    "export_only": false,
+    "meta": {
+      "title": "Промышленный грохот",
+      "description": "Промышленный грохот используется для разделения и классификации материала по крупности на этапах переработки."
+    },
+    "alternates": {
+      "fa": "sarand",
+      "en": "screening-equipment",
+      "ru": "grohoty",
+      "ar": "معدات-التدريج"
+    },
+    "text": "Промышленный грохот используется для разделения и классификации материала по крупности на этапах переработки.",
+    "subcategory_ids": [
+      "screening"
+    ]
+  },
+  {
+    "id": "product-laser-leveler",
+    "slug": "lazernyy-planirovshchik",
+    "name": "Лазерный планировщик земли",
+    "intro": "Машины для планировки земли",
+    "image": "/images/card-4.webp",
+    "applications": [
+      "Экспортная продукция; окончательные характеристики зависят от заказа"
+    ],
+    "industries": [
+      "Горнодобывающая промышленность и переработка минералов"
+    ],
+    "advantages": [
+      "Проектирование с учётом условий эксплуатации"
+    ],
+    "specs": [
+      {
+        "group": "Технические характеристики",
+        "label": "Производительность",
+        "value": "[نیازمند تأیید]",
+        "unit": null
+      }
+    ],
+    "models": [],
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/images/card-4.webp",
+        "alt": "Лазерный планировщик земли"
+      }
+    ],
+    "catalog_file": null,
+    "related": [],
+    "section_ids": [
+      "agri"
+    ],
+    "export_only": true,
+    "meta": {
+      "title": "Лазерный планировщик земли",
+      "description": "Лазерный планировщик использует систему лазерного управления для точной планировки земельных участков."
+    },
+    "alternates": {
+      "fa": "land-leveler-laser",
+      "en": "laser-land-leveler",
+      "ru": "lazernyy-planirovshchik",
+      "ar": "تسوية-ليزرية"
+    },
+    "text": "Лазерный планировщик использует систему лазерного управления для точной планировки земельных участков.",
+    "subcategory_ids": [
+      "laserLeveler"
+    ]
+  }
+]

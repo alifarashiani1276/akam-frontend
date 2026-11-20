@@ -1,0 +1,274 @@
+[
+  {
+    "id": "mining",
+    "slug": "mining-machinery",
+    "image": "/images/card-1.webp",
+    "export_only": false,
+    "title": "Mining machinery and mineral processing equipment",
+    "short": "Mining machinery",
+    "text": "Design and manufacture of equipment for conveying, crushing, sizing and separating minerals, focused on hard and heavy materials such as ferrochrome, ferromanganese, ferroalloy products and industrial slag.",
+    "alternates": {
+      "fa": "maadani",
+      "en": "mining-machinery",
+      "ru": "gornoe-oborudovanie",
+      "ar": "معدات-التعدين"
+    },
+    "items": [
+      {
+        "id": "crushing",
+        "slug": "crushing-equipment",
+        "title": "Crushing equipment",
+        "text": "Crushing equipment: double-toggle jaw crushers and crushing equipment for hard and heavy materials.",
+        "alternates": {
+          "fa": "sang-shekan",
+          "en": "crushing-equipment",
+          "ru": "drobilnoe-oborudovanie",
+          "ar": "معدات-التكسير"
+        }
+      },
+      {
+        "id": "screening",
+        "slug": "screening-equipment",
+        "title": "Sizing equipment",
+        "text": "Sizing equipment: industrial screens and equipment for separating materials by size.",
+        "alternates": {
+          "fa": "sarand",
+          "en": "screening-equipment",
+          "ru": "grohoty",
+          "ar": "معدات-التدريج"
+        }
+      },
+      {
+        "id": "gravity",
+        "slug": "gravity-separation",
+        "title": "Gravity separation equipment",
+        "text": "Gravity separation equipment: jig machines and shaking tables.",
+        "alternates": {
+          "fa": "jig",
+          "en": "gravity-separation",
+          "ru": "gravitacionnoe-obogashchenie",
+          "ar": "الفصل-الثقلي"
+        }
+      },
+      {
+        "id": "conveying",
+        "slug": "material-conveying",
+        "title": "Material transfer equipment",
+        "text": "Material transfer equipment: feeding and conveying equipment between processing stages.",
+        "alternates": {
+          "fa": "enteghal",
+          "en": "material-conveying",
+          "ru": "transportirovka",
+          "ar": "نقل-المواد"
+        }
+      },
+      {
+        "id": "lines",
+        "slug": "processing-lines",
+        "title": "Complete crushing and processing line equipment",
+        "text": "Complete crushing and processing line equipment.",
+        "alternates": {
+          "fa": "khatt-faravari",
+          "en": "processing-lines",
+          "ru": "linii-pererabotki",
+          "ar": "خطوط-المعالجة"
+        }
+      }
+    ]
+  },
+  {
+    "id": "industrial",
+    "slug": "industrial-equipment",
+    "image": "/images/card-2.webp",
+    "export_only": false,
+    "title": "Industrial machinery, equipment and parts",
+    "short": "Industrial equipment",
+    "text": "Manufacture of machinery, equipment and parts for factory production lines, not limited to one industry, including steel, cement and ferroalloy plants.",
+    "alternates": {
+      "fa": "sanati",
+      "en": "industrial-equipment",
+      "ru": "prom-oborudovanie",
+      "ar": "المعدات-الصناعية"
+    },
+    "items": [
+      {
+        "id": "molten",
+        "slug": "molten-metal-handling",
+        "title": "Molten metal handling",
+        "text": "Molten metal handling: ladles for carrying molten metal and related equipment.",
+        "alternates": {
+          "fa": "patil-mozab",
+          "en": "molten-metal-handling",
+          "ru": "kovshi-rasplava",
+          "ar": "نقل-المعدن-المنصهر"
+        }
+      },
+      {
+        "id": "handling",
+        "slug": "material-handling",
+        "title": "Material handling",
+        "text": "Material handling: industrial hooks, material transfer equipment for smelting lines and handling of finished products.",
+        "alternates": {
+          "fa": "haml-mavad",
+          "en": "material-handling",
+          "ru": "peremeshchenie-materialov",
+          "ar": "مناولة-المواد"
+        }
+      },
+      {
+        "id": "dust",
+        "slug": "dust-collection",
+        "title": "Industrial dust collection",
+        "text": "Industrial dust collection: dust-collection cyclones and related parts.",
+        "alternates": {
+          "fa": "ghobar-gir",
+          "en": "dust-collection",
+          "ru": "pyleulavlivanie",
+          "ar": "إزالة-الغبار"
+        }
+      },
+      {
+        "id": "parts",
+        "slug": "industrial-parts",
+        "title": "Production line parts and equipment",
+        "text": "Production line parts and equipment: custom parts, mechanical assemblies and special equipment.",
+        "alternates": {
+          "fa": "ghateat",
+          "en": "industrial-parts",
+          "ru": "promdetali",
+          "ar": "القطع-الصناعية"
+        }
+      }
+    ]
+  },
+  {
+    "id": "engineering",
+    "slug": "engineering-services",
+    "image": "/images/card-3.webp",
+    "export_only": false,
+    "title": "Engineering, design and machinery rebuilding services",
+    "short": "Engineering & rebuilding",
+    "text": "Turning customer needs into engineering designs, building special-purpose machines, reverse engineering and rebuilding existing equipment.",
+    "alternates": {
+      "fa": "mohandesi",
+      "en": "engineering-services",
+      "ru": "inzhiniring",
+      "ar": "الخدمات-الهندسية"
+    },
+    "items": [
+      {
+        "id": "custom",
+        "slug": "custom-machine-design",
+        "title": "Special-purpose machines",
+        "text": "Special-purpose machines: requirements intake, 3D modeling, drawings, manufacturing, assembly and testing.",
+        "alternates": {
+          "fa": "tarahi-sakht",
+          "en": "custom-machine-design",
+          "ru": "spetsialnye-mashiny",
+          "ar": "تصميم-الآلات-الخاصة"
+        }
+      },
+      {
+        "id": "reverse",
+        "slug": "reverse-engineering",
+        "title": "Reverse engineering and improvement",
+        "text": "Reverse engineering and improvement: examining an existing sample, performance analysis, defect identification, design correction and manufacturing.",
+        "alternates": {
+          "fa": "mohandesi-makoos",
+          "en": "reverse-engineering",
+          "ru": "revers-inzhiniring",
+          "ar": "الهندسة-العكسية"
+        }
+      },
+      {
+        "id": "rebuild",
+        "slug": "machinery-rebuilding",
+        "title": "Heavy and mining machinery rebuilding",
+        "text": "Heavy and mining machinery rebuilding: loader and excavator structures, hydraulic jacks, bucket rebuilding and reinforcement.",
+        "alternates": {
+          "fa": "bazsazi",
+          "en": "machinery-rebuilding",
+          "ru": "vosstanovlenie-tehniki",
+          "ar": "إعادة-التأهيل"
+        }
+      },
+      {
+        "id": "parts",
+        "slug": "industrial-parts",
+        "title": "Industrial parts",
+        "text": "Industrial parts: overhaul of mechanical assemblies, replacement parts and equipment improvement.",
+        "alternates": {
+          "fa": "ghateat",
+          "en": "industrial-parts",
+          "ru": "promdetali",
+          "ar": "القطع-الصناعية"
+        }
+      }
+    ]
+  },
+  {
+    "id": "agri",
+    "slug": "agricultural-machinery",
+    "image": "/images/card-4.webp",
+    "export_only": true,
+    "title": "Export agricultural machinery",
+    "short": "Agricultural machinery",
+    "text": "Land-leveling machinery with laser and satellite control systems, offered for export.",
+    "alternates": {
+      "fa": "keshavarzi",
+      "en": "agricultural-machinery",
+      "ru": "selhoztehnika",
+      "ar": "الآلات-الزراعية"
+    },
+    "items": [
+      {
+        "id": "laserLeveler",
+        "slug": "laser-land-leveler",
+        "title": "Laser land levelers",
+        "text": "Laser land levelers.",
+        "alternates": {
+          "fa": "land-leveler-laser",
+          "en": "laser-land-leveler",
+          "ru": "lazernyy-planirovshchik",
+          "ar": "تسوية-ليزرية"
+        }
+      },
+      {
+        "id": "gnssLeveler",
+        "slug": "gnss-land-leveler",
+        "title": "Satellite (GPS/GNSS) land levelers",
+        "text": "Satellite (GPS/GNSS) land levelers.",
+        "alternates": {
+          "fa": "land-leveler-gnss",
+          "en": "gnss-land-leveler",
+          "ru": "sputnikovyy-planirovshchik",
+          "ar": "تسوية-فضائية"
+        }
+      },
+      {
+        "id": "laserScraper",
+        "slug": "laser-scraper",
+        "title": "Laser scrapers",
+        "text": "Laser scrapers.",
+        "alternates": {
+          "fa": "scraper-laser",
+          "en": "laser-scraper",
+          "ru": "lazernyy-skreper",
+          "ar": "سكريبر-ليزري"
+        }
+      },
+      {
+        "id": "gnssScraper",
+        "slug": "gnss-scraper",
+        "title": "Satellite (GPS/GNSS) scrapers",
+        "text": "Satellite (GPS/GNSS) scrapers.",
+        "alternates": {
+          "fa": "scraper-gnss",
+          "en": "gnss-scraper",
+          "ru": "sputnikovyy-skreper",
+          "ar": "سكريبر-فضائي"
+        }
+      }
+    ]
+  }
+]

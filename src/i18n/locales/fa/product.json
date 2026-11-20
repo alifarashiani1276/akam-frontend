@@ -1,0 +1,30 @@
+{
+  "productPage": {
+    "eyebrow": "مشخصات و راهکار محصول",
+    "exportBadge": "Export / صادرات",
+    "exportNotice": "این محصول در حال حاضر صرفاً برای بازارهای صادراتی عرضه می‌شود. برای دریافت شرایط خرید، درخواست صادراتی خود را ثبت کنید.",
+    "requestQuote": "درخواست استعلام",
+    "introduction": "معرفی محصول",
+    "applications": "کاربردها",
+    "industries": "صنایع هدف",
+    "advantages": "مزیت‌ها",
+    "specifications": "مشخصات فنی",
+    "specLabel": "عنوان مشخصه",
+    "specValue": "مقدار",
+    "specUnit": "واحد",
+    "models": "مدل‌های محصول",
+    "selectModel": "انتخاب مدل",
+    "gallery": "گالری تصاویر و ویدیو",
+    "video": "ویدیو",
+    "openMedia": "نمایش رسانه شماره {{index}}",
+    "close": "بستن",
+    "previousMedia": "رسانه قبلی",
+    "nextMedia": "رسانه بعدی",
+    "downloadCatalog": "دانلود فایل کاتالوگ",
+    "related": "محصولات مرتبط",
+    "viewProduct": "مشاهده محصول",
+    "breadcrumbLabel": "مسیر صفحه",
+    "home": "خانه",
+    "products": "محصولات و خدمات"
+  }
+}

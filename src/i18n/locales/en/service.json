@@ -1,0 +1,19 @@
+{
+  "servicePage": {
+    "eyebrow": "AKAM Engineering Services",
+    "breadcrumbLabel": "Breadcrumb",
+    "home": "Home",
+    "services": "Services",
+    "description": "Service description",
+    "applicationArea": "Application area",
+    "process": "Execution process",
+    "capabilities": "Technical capabilities",
+    "projects": "Selected projects",
+    "beforeAfter": "Before and after",
+    "before": "Before",
+    "after": "After",
+    "sliderHint": "Drag, touch, or use the arrow keys to compare the images.",
+    "comparisonControl": "Image comparison control {{index}}",
+    "viewProject": "View project"
+  }
+}

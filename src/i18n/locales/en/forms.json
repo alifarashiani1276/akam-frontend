@@ -1,0 +1,58 @@
+{
+  "forms": {
+    "fields": {
+      "name": "Full name",
+      "company": "Company / organization",
+      "phone": "Phone number",
+      "email": "Email",
+      "country": "Destination country",
+      "message": "Your message"
+    },
+    "types": {
+      "quote": {
+        "eyebrow": "Price quotation",
+        "title": "Request a quotation",
+        "description": "Tell us what you need. The AKAM Machine team will review your request and contact you with the next steps."
+      },
+      "consultation": {
+        "eyebrow": "Consultation & projects",
+        "title": "Request a consultation or submit a project",
+        "description": "Describe your requirements, idea, or project so our team can review the technical scope and discuss cooperation."
+      },
+      "export": {
+        "eyebrow": "Export sales",
+        "title": "Export purchase request",
+        "description": "Share your contact details and destination country. Our international sales team will follow up on your export inquiry."
+      },
+      "contact": {
+        "eyebrow": "Get in touch",
+        "title": "Contact us",
+        "description": "Send us a message for general questions, feedback, or follow-up."
+      }
+    },
+    "validation": {
+      "required": "This field is required.",
+      "phone": "Enter a valid phone number.",
+      "email": "Enter a valid email address.",
+      "server": "Please correct the fields highlighted below."
+    },
+    "success": "Your request has been submitted successfully. Thank you.",
+    "error": "We could not submit your request. Please try again.",
+    "sending": "Sending…",
+    "submit": "Submit request",
+    "requiredNote": "Fields marked with an asterisk are required."
+  },
+  "contactPage": {
+    "eyebrow": "Let’s connect",
+    "title": "Contact AKAM Machine",
+    "description": "Use the contact details and form below to reach our team or send an inquiry.",
+    "phones": "Confirmed phone numbers",
+    "email": "Email",
+    "address": "Address",
+    "postalCode": "Postal code",
+    "extension": "Ext.",
+    "noDetails": "Contact details unavailable",
+    "noDetailsText": "There are currently no confirmed contact details to display.",
+    "openContact": "Contact page"
+  }
+}

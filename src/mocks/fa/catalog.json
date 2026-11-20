@@ -1,0 +1,274 @@
+[
+  {
+    "id": "mining",
+    "slug": "maadani",
+    "image": "/images/card-1.webp",
+    "export_only": false,
+    "title": "ماشین‌آلات معدنی و تجهیزات فرآوری مواد معدنی",
+    "short": "ماشین‌آلات معدنی",
+    "text": "طراحی و ساخت تجهیزات انتقال، خردایش، دانه‌بندی و جداسازی مواد معدنی، با تمرکز بر مواد سخت و سنگین مانند فروکروم، فرومنگنز، محصولات فروآلیاژی و سرباره‌های صنعتی.",
+    "alternates": {
+      "fa": "maadani",
+      "en": "mining-machinery",
+      "ru": "gornoe-oborudovanie",
+      "ar": "معدات-التعدين"
+    },
+    "items": [
+      {
+        "id": "crushing",
+        "slug": "sang-shekan",
+        "title": "تجهیزات خردایش",
+        "text": "تجهیزات خردایش: سنگ‌شکن‌های فکی دابل توگل و تجهیزات خردایش مواد سخت و سنگین.",
+        "alternates": {
+          "fa": "sang-shekan",
+          "en": "crushing-equipment",
+          "ru": "drobilnoe-oborudovanie",
+          "ar": "معدات-التكسير"
+        }
+      },
+      {
+        "id": "screening",
+        "slug": "sarand",
+        "title": "تجهیزات دانه‌بندی",
+        "text": "تجهیزات دانه‌بندی: انواع سرند صنعتی و تجهیزات تفکیک مواد بر اساس اندازه.",
+        "alternates": {
+          "fa": "sarand",
+          "en": "screening-equipment",
+          "ru": "grohoty",
+          "ar": "معدات-التدريج"
+        }
+      },
+      {
+        "id": "gravity",
+        "slug": "jig",
+        "title": "تجهیزات جداسازی ثقلی",
+        "text": "تجهیزات جداسازی ثقلی: دستگاه جیگ و میز لرزان.",
+        "alternates": {
+          "fa": "jig",
+          "en": "gravity-separation",
+          "ru": "gravitacionnoe-obogashchenie",
+          "ar": "الفصل-الثقلي"
+        }
+      },
+      {
+        "id": "conveying",
+        "slug": "enteghal",
+        "title": "تجهیزات انتقال مواد",
+        "text": "تجهیزات انتقال مواد: تجهیزات تغذیه و انتقال مواد بین مراحل فرآوری.",
+        "alternates": {
+          "fa": "enteghal",
+          "en": "material-conveying",
+          "ru": "transportirovka",
+          "ar": "نقل-المواد"
+        }
+      },
+      {
+        "id": "lines",
+        "slug": "khatt-faravari",
+        "title": "مجموعه تجهیزات خطوط خردایش و فرآوری",
+        "text": "مجموعه تجهیزات خطوط خردایش و فرآوری.",
+        "alternates": {
+          "fa": "khatt-faravari",
+          "en": "processing-lines",
+          "ru": "linii-pererabotki",
+          "ar": "خطوط-المعالجة"
+        }
+      }
+    ]
+  },
+  {
+    "id": "industrial",
+    "slug": "sanati",
+    "image": "/images/card-2.webp",
+    "export_only": false,
+    "title": "ماشین‌آلات، تجهیزات و قطعات صنعتی",
+    "short": "تجهیزات صنعتی",
+    "text": "ساخت ماشین‌آلات، تجهیزات و قطعات خطوط تولید کارخانه‌ها، بدون محدودیت به یک صنعت خاص؛ از جمله صنایع فولاد، سیمان و فروآلیاژ.",
+    "alternates": {
+      "fa": "sanati",
+      "en": "industrial-equipment",
+      "ru": "prom-oborudovanie",
+      "ar": "المعدات-الصناعية"
+    },
+    "items": [
+      {
+        "id": "molten",
+        "slug": "patil-mozab",
+        "title": "تجهیزات حمل و انتقال مذاب",
+        "text": "تجهیزات حمل و انتقال مذاب: انواع پاتیل حمل مذاب و تجهیزات مرتبط.",
+        "alternates": {
+          "fa": "patil-mozab",
+          "en": "molten-metal-handling",
+          "ru": "kovshi-rasplava",
+          "ar": "نقل-المعدن-المنصهر"
+        }
+      },
+      {
+        "id": "handling",
+        "slug": "haml-mavad",
+        "title": "تجهیزات حمل و جابه‌جایی مواد",
+        "text": "تجهیزات حمل و جابه‌جایی مواد: انواع هوک صنعتی، تجهیزات انتقال مواد در خطوط ذوب و جابه‌جایی محصول نهایی.",
+        "alternates": {
+          "fa": "haml-mavad",
+          "en": "material-handling",
+          "ru": "peremeshchenie-materialov",
+          "ar": "مناولة-المواد"
+        }
+      },
+      {
+        "id": "dust",
+        "slug": "ghobar-gir",
+        "title": "تجهیزات غبارگیری صنعتی",
+        "text": "تجهیزات غبارگیری صنعتی: انواع سیکلون غبارگیر و قطعات مرتبط.",
+        "alternates": {
+          "fa": "ghobar-gir",
+          "en": "dust-collection",
+          "ru": "pyleulavlivanie",
+          "ar": "إزالة-الغبار"
+        }
+      },
+      {
+        "id": "parts",
+        "slug": "ghateat",
+        "title": "ساخت قطعات و تجهیزات خطوط تولید",
+        "text": "ساخت قطعات و تجهیزات خطوط تولید: قطعات سفارشی، مجموعه‌های مکانیکی و تجهیزات خاص.",
+        "alternates": {
+          "fa": "ghateat",
+          "en": "industrial-parts",
+          "ru": "promdetali",
+          "ar": "القطع-الصناعية"
+        }
+      }
+    ]
+  },
+  {
+    "id": "engineering",
+    "slug": "mohandesi",
+    "image": "/images/card-3.webp",
+    "export_only": false,
+    "title": "خدمات مهندسی، طراحی و بازسازی ماشین‌آلات",
+    "short": "مهندسی و بازسازی",
+    "text": "تبدیل نیاز مشتری به طرح مهندسی، ساخت دستگاه‌های خاص، مهندسی معکوس و بازسازی تجهیزات موجود.",
+    "alternates": {
+      "fa": "mohandesi",
+      "en": "engineering-services",
+      "ru": "inzhiniring",
+      "ar": "الخدمات-الهندسية"
+    },
+    "items": [
+      {
+        "id": "custom",
+        "slug": "tarahi-sakht",
+        "title": "طراحی و ساخت ماشین‌آلات خاص",
+        "text": "طراحی و ساخت ماشین‌آلات خاص: دریافت شرح نیاز، مدل‌سازی سه‌بعدی، تهیه نقشه، ساخت، مونتاژ و آزمایش.",
+        "alternates": {
+          "fa": "tarahi-sakht",
+          "en": "custom-machine-design",
+          "ru": "spetsialnye-mashiny",
+          "ar": "تصميم-الآلات-الخاصة"
+        }
+      },
+      {
+        "id": "reverse",
+        "slug": "mohandesi-makoos",
+        "title": "مهندسی معکوس و بهسازی",
+        "text": "مهندسی معکوس و بهسازی: بررسی نمونه موجود، تحلیل عملکرد، شناسایی نقص، اصلاح طراحی و ساخت.",
+        "alternates": {
+          "fa": "mohandesi-makoos",
+          "en": "reverse-engineering",
+          "ru": "revers-inzhiniring",
+          "ar": "الهندسة-العكسية"
+        }
+      },
+      {
+        "id": "rebuild",
+        "slug": "bazsazi",
+        "title": "بازسازی ماشین‌آلات سنگین و معدنی",
+        "text": "بازسازی ماشین‌آلات سنگین و معدنی: سازه لودر و بیل مکانیکی، جک هیدرولیک، بازسازی و تقویت باکت.",
+        "alternates": {
+          "fa": "bazsazi",
+          "en": "machinery-rebuilding",
+          "ru": "vosstanovlenie-tehniki",
+          "ar": "إعادة-التأهيل"
+        }
+      },
+      {
+        "id": "parts",
+        "slug": "ghateat",
+        "title": "ساخت و بازسازی قطعات صنعتی",
+        "text": "ساخت و بازسازی قطعات صنعتی: اورهال مجموعه‌های مکانیکی، قطعات جایگزین و بهسازی تجهیزات.",
+        "alternates": {
+          "fa": "ghateat",
+          "en": "industrial-parts",
+          "ru": "promdetali",
+          "ar": "القطع-الصناعية"
+        }
+      }
+    ]
+  },
+  {
+    "id": "agri",
+    "slug": "keshavarzi",
+    "image": "/images/card-4.webp",
+    "export_only": true,
+    "title": "ماشین‌آلات کشاورزی صادراتی",
+    "short": "ماشین‌آلات کشاورزی",
+    "text": "ماشین‌آلات تسطیح زمین با سیستم‌های کنترل لیزری و ماهواره‌ای، با رویکرد صادرات.",
+    "alternates": {
+      "fa": "keshavarzi",
+      "en": "agricultural-machinery",
+      "ru": "selhoztehnika",
+      "ar": "الآلات-الزراعية"
+    },
+    "items": [
+      {
+        "id": "laserLeveler",
+        "slug": "land-leveler-laser",
+        "title": "لند لولرهای لیزری",
+        "text": "لند لولرهای لیزری.",
+        "alternates": {
+          "fa": "land-leveler-laser",
+          "en": "laser-land-leveler",
+          "ru": "lazernyy-planirovshchik",
+          "ar": "تسوية-ليزرية"
+        }
+      },
+      {
+        "id": "gnssLeveler",
+        "slug": "land-leveler-gnss",
+        "title": "لند لولرهای ماهواره‌ای (GPS/GNSS)",
+        "text": "لند لولرهای ماهواره‌ای (GPS/GNSS).",
+        "alternates": {
+          "fa": "land-leveler-gnss",
+          "en": "gnss-land-leveler",
+          "ru": "sputnikovyy-planirovshchik",
+          "ar": "تسوية-فضائية"
+        }
+      },
+      {
+        "id": "laserScraper",
+        "slug": "scraper-laser",
+        "title": "اسکریپرهای لیزری",
+        "text": "اسکریپرهای لیزری.",
+        "alternates": {
+          "fa": "scraper-laser",
+          "en": "laser-scraper",
+          "ru": "lazernyy-skreper",
+          "ar": "سكريبر-ليزري"
+        }
+      },
+      {
+        "id": "gnssScraper",
+        "slug": "scraper-gnss",
+        "title": "اسکریپرهای ماهواره‌ای (GPS/GNSS)",
+        "text": "اسکریپرهای ماهواره‌ای (GPS/GNSS).",
+        "alternates": {
+          "fa": "scraper-gnss",
+          "en": "gnss-scraper",
+          "ru": "sputnikovyy-skreper",
+          "ar": "سكريبر-فضائي"
+        }
+      }
+    ]
+  }
+]

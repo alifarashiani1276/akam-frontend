@@ -3,17 +3,21 @@
     "name": "AKAM Machine"
   },
   "nav": {
-    "about": "About",
+    "about": "About AKAM Machine",
     "services": "Services",
     "quality": "Quality",
     "process": "How we work",
-    "contact": "Contact",
+    "contact": "Contact us",
     "home": "Home",
-    "products": "Products"
+    "products": "Products & Services",
+    "allProducts": "All products & services",
+    "capabilities": "Manufacturing capabilities",
+    "projects": "Projects & Case Studies"
   },
   "common": {
     "getQuote": "Request a quote",
-    "menu": "Menu"
+    "menu": "Menu",
+    "close": "Close"
   },
   "meta": {
     "title": "AKAM Machine | Industrial & Mining Machinery Manufacturing",
@@ -33,5 +37,20 @@
     "afterSales": "After-sales service",
     "finance": "Finance",
     "purchase": "Purchasing"
+  },
+  "pages": {
+    "products": "Products & Services",
+    "productSection": "Product category",
+    "productSubcategory": "Product subcategory",
+    "product": "Product details",
+    "service": "Service details",
+    "project": "Project details",
+    "blog": "Blog",
+    "blogPost": "Article"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "text": "The address may be invalid or this page may no longer be available.",
+    "home": "Back to home"
   }
 }

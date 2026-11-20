@@ -1,0 +1,74 @@
+[
+  {
+    "id": "service-custom-design",
+    "slug": "custom-machine-design",
+    "title": "Custom machine design and manufacturing",
+    "intro": "Turning an operational requirement into an engineered solution and purpose-built equipment.",
+    "application_area": "Turning customer needs into engineering designs, building special-purpose machines, reverse engineering and rebuilding existing equipment.",
+    "steps": [
+      {
+        "title": "Requirements and design",
+        "text": "From requirements intake and 3D modeling to drawings, manufacturing, assembly and testing."
+      },
+      {
+        "title": "Manufacturing and testing",
+        "text": "Assembly, quality checks and performance testing according to project requirements."
+      }
+    ],
+    "capabilities": [
+      "Special-purpose machines: requirements intake, 3D modeling, drawings, manufacturing, assembly and testing.",
+      "Reverse engineering and improvement: examining an existing sample, performance analysis, defect identification, design correction and manufacturing."
+    ],
+    "projects": [],
+    "before_after": [],
+    "meta": {
+      "title": "Custom machine design and manufacturing",
+      "description": "Turning an operational requirement into an engineered solution and purpose-built equipment."
+    },
+    "alternates": {
+      "fa": "tarahi-sakht",
+      "en": "custom-machine-design",
+      "ru": "spetsialnye-mashiny",
+      "ar": "تصميم-الآلات-الخاصة"
+    },
+    "subcategory_ids": [
+      "custom"
+    ]
+  },
+  {
+    "id": "service-reverse-engineering",
+    "slug": "reverse-engineering",
+    "title": "Reverse engineering and rebuilding",
+    "intro": "Assessing existing equipment to correct defects, improve performance or restore operation.",
+    "application_area": "Turning customer needs into engineering designs, building special-purpose machines, reverse engineering and rebuilding existing equipment.",
+    "steps": [
+      {
+        "title": "Requirements and design",
+        "text": "Sample inspection, performance analysis, defect identification, design correction and manufacturing or rebuilding."
+      },
+      {
+        "title": "Manufacturing and testing",
+        "text": "Assembly, quality checks and performance testing according to project requirements."
+      }
+    ],
+    "capabilities": [
+      "Special-purpose machines: requirements intake, 3D modeling, drawings, manufacturing, assembly and testing.",
+      "Reverse engineering and improvement: examining an existing sample, performance analysis, defect identification, design correction and manufacturing."
+    ],
+    "projects": [],
+    "before_after": [],
+    "meta": {
+      "title": "Reverse engineering and rebuilding",
+      "description": "Assessing existing equipment to correct defects, improve performance or restore operation."
+    },
+    "alternates": {
+      "fa": "mohandesi-makoos",
+      "en": "reverse-engineering",
+      "ru": "revers-inzhiniring",
+      "ar": "الهندسة-العكسية"
+    },
+    "subcategory_ids": [
+      "reverse"
+    ]
+  }
+]

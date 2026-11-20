@@ -1,0 +1,158 @@
+[
+  {
+    "id": "product-crusher",
+    "slug": "crushing-equipment",
+    "name": "Double-toggle jaw crusher",
+    "intro": "Hard and heavy material crushing equipment",
+    "image": "/images/card-1.webp",
+    "applications": [
+      "Suitable for ferroalloy and mineral processing lines"
+    ],
+    "industries": [
+      "Mining and mineral processing"
+    ],
+    "advantages": [
+      "Engineered for operating conditions"
+    ],
+    "specs": [
+      {
+        "group": "Technical specifications",
+        "label": "Capacity",
+        "value": "[نیازمند تأیید]",
+        "unit": null
+      }
+    ],
+    "models": [],
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/images/card-1.webp",
+        "alt": "Double-toggle jaw crusher"
+      }
+    ],
+    "catalog_file": null,
+    "related": [],
+    "section_ids": [
+      "mining"
+    ],
+    "export_only": false,
+    "meta": {
+      "title": "Double-toggle jaw crusher",
+      "description": "A double-toggle jaw crusher designed for crushing hard and heavy minerals in processing circuits."
+    },
+    "alternates": {
+      "fa": "sang-shekan",
+      "en": "crushing-equipment",
+      "ru": "drobilnoe-oborudovanie",
+      "ar": "معدات-التكسير"
+    },
+    "text": "A double-toggle jaw crusher designed for crushing hard and heavy minerals in processing circuits.",
+    "subcategory_ids": [
+      "crushing"
+    ]
+  },
+  {
+    "id": "product-screen",
+    "slug": "screening-equipment",
+    "name": "Industrial screen",
+    "intro": "Mineral sizing equipment",
+    "image": "/images/card-1.webp",
+    "applications": [
+      "Can be engineered for the required capacity and sizing"
+    ],
+    "industries": [
+      "Mining and mineral processing"
+    ],
+    "advantages": [
+      "Engineered for operating conditions"
+    ],
+    "specs": [
+      {
+        "group": "Technical specifications",
+        "label": "Capacity",
+        "value": "[نیازمند تأیید]",
+        "unit": null
+      }
+    ],
+    "models": [],
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/images/card-1.webp",
+        "alt": "Industrial screen"
+      }
+    ],
+    "catalog_file": null,
+    "related": [],
+    "section_ids": [
+      "mining"
+    ],
+    "export_only": false,
+    "meta": {
+      "title": "Industrial screen",
+      "description": "An industrial screen used to separate and classify material by size across processing stages."
+    },
+    "alternates": {
+      "fa": "sarand",
+      "en": "screening-equipment",
+      "ru": "grohoty",
+      "ar": "معدات-التدريج"
+    },
+    "text": "An industrial screen used to separate and classify material by size across processing stages.",
+    "subcategory_ids": [
+      "screening"
+    ]
+  },
+  {
+    "id": "product-laser-leveler",
+    "slug": "laser-land-leveler",
+    "name": "Laser land leveler",
+    "intro": "Land-leveling machinery",
+    "image": "/images/card-4.webp",
+    "applications": [
+      "Export product; final technical details depend on the order"
+    ],
+    "industries": [
+      "Mining and mineral processing"
+    ],
+    "advantages": [
+      "Engineered for operating conditions"
+    ],
+    "specs": [
+      {
+        "group": "Technical specifications",
+        "label": "Capacity",
+        "value": "[نیازمند تأیید]",
+        "unit": null
+      }
+    ],
+    "models": [],
+    "gallery": [
+      {
+        "type": "image",
+        "src": "/images/card-4.webp",
+        "alt": "Laser land leveler"
+      }
+    ],
+    "catalog_file": null,
+    "related": [],
+    "section_ids": [
+      "agri"
+    ],
+    "export_only": true,
+    "meta": {
+      "title": "Laser land leveler",
+      "description": "A laser land leveler uses a laser control system to support accurate land leveling operations."
+    },
+    "alternates": {
+      "fa": "land-leveler-laser",
+      "en": "laser-land-leveler",
+      "ru": "lazernyy-planirovshchik",
+      "ar": "تسوية-ليزرية"
+    },
+    "text": "A laser land leveler uses a laser control system to support accurate land leveling operations.",
+    "subcategory_ids": [
+      "laserLeveler"
+    ]
+  }
+]

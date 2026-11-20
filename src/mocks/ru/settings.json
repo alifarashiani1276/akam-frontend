@@ -1,0 +1,44 @@
+{
+  "phones": [
+    {
+      "id": "sales",
+      "label": "Продажи",
+      "number": "09200953320",
+      "ext": null,
+      "confirmed": true
+    },
+    {
+      "id": "landline",
+      "label": "Городской телефон",
+      "number": null,
+      "ext": null,
+      "confirmed": false
+    },
+    {
+      "id": "afterSales",
+      "label": "Послепродажное обслуживание",
+      "number": null,
+      "ext": "96",
+      "confirmed": false
+    },
+    {
+      "id": "finance",
+      "label": "Финансы",
+      "number": null,
+      "ext": "97",
+      "confirmed": false
+    },
+    {
+      "id": "purchase",
+      "label": "Закупки",
+      "number": null,
+      "ext": "98",
+      "confirmed": false
+    }
+  ],
+  "email": null,
+  "address": null,
+  "postalCode": null,
+  "social": [],
+  "chat_enabled": true
+}

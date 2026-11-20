@@ -72,6 +72,8 @@
   .site-header .dropdown-content { @apply text-base-content; }
   /* Brand cards (Brand Guidelines 2024): black panel, slanted yellow bullets (the yellow bar is an animated element in Services.jsx). The triangle super graphic is <BrandTriangles />. */
   .brand-card { @apply relative isolate flex flex-col overflow-hidden bg-black md:flex-row; }
+  /* Vertical variant for grid cards (subcategory, product, project lists): image on top, text below. */
+  .brand-card-col { @apply md:flex-col; }
   /* Partner/client logo strip: auto-scrolling, pauses on hover; card border fades out downwards like the Movora reference. */
   .logo-marquee { @apply overflow-hidden; mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent); }
   .logo-track { @apply flex w-max animate-[marquee_45s_linear_infinite]; }

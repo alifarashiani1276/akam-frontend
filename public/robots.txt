@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+# The sitemap URL is added by `npm run sitemap` when SITE_URL is configured.

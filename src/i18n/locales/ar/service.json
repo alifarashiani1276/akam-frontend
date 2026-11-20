@@ -1,0 +1,19 @@
+{
+  "servicePage": {
+    "eyebrow": "خدمات آكام الهندسية",
+    "breadcrumbLabel": "مسار التنقل",
+    "home": "الرئيسية",
+    "services": "الخدمات",
+    "description": "وصف الخدمة",
+    "applicationArea": "مجال التطبيق",
+    "process": "مراحل التنفيذ",
+    "capabilities": "القدرات الفنية",
+    "projects": "نماذج من المشاريع",
+    "beforeAfter": "قبل وبعد",
+    "before": "قبل",
+    "after": "بعد",
+    "sliderHint": "اسحب المؤشر أو استخدم اللمس أو مفاتيح الأسهم لمقارنة الصور.",
+    "comparisonControl": "أداة مقارنة الصور رقم {{index}}",
+    "viewProject": "عرض المشروع"
+  }
+}

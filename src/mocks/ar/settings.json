@@ -1,0 +1,44 @@
+{
+  "phones": [
+    {
+      "id": "sales",
+      "label": "المبيعات",
+      "number": "09200953320",
+      "ext": null,
+      "confirmed": true
+    },
+    {
+      "id": "landline",
+      "label": "الهاتف الأرضي",
+      "number": null,
+      "ext": null,
+      "confirmed": false
+    },
+    {
+      "id": "afterSales",
+      "label": "خدمة ما بعد البيع",
+      "number": null,
+      "ext": "96",
+      "confirmed": false
+    },
+    {
+      "id": "finance",
+      "label": "المالية",
+      "number": null,
+      "ext": "97",
+      "confirmed": false
+    },
+    {
+      "id": "purchase",
+      "label": "المشتريات",
+      "number": null,
+      "ext": "98",
+      "confirmed": false
+    }
+  ],
+  "email": null,
+  "address": null,
+  "postalCode": null,
+  "social": [],
+  "chat_enabled": true
+}

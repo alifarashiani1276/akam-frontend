@@ -7,16 +7,17 @@ const H = 420
 // Static brand triangle graphic (see utils/trianglePath.js): a few fine white triangles in the bottom-left corner,
 // fading out quickly. Mirrored automatically in LTR. Color = text color, e.g. className="text-white". Place it inside a
 // `relative isolate` parent: it fills the parent and sits behind the content.
-export default function BrandTriangles({ className = '', seed = 7 }) {
+// zoom: 1 = normal size, 2 = triangles twice as big (shows the bottom-left half of the drawing, enlarged).
+export default function BrandTriangles({ className = '', seed = 7, zoom = 1 }) {
   const paths = useMemo(() => buildTrianglePaths({ width: W, height: H, seed }), [seed])
   return (
     <svg
-      viewBox={`0 0 ${W} ${H}`}
+      viewBox={`0 ${H - H / zoom} ${W / zoom} ${H / zoom}`}
       preserveAspectRatio="xMinYMax slice"
       className={`pointer-events-none absolute inset-0 -z-10 h-full w-full ltr:-scale-x-100 ${className}`}
       fill="none"
       stroke="currentColor"
-      strokeWidth="0.8"
+      strokeWidth={zoom > 1 ? 0.6 : 0.8}
       strokeLinejoin="round"
       aria-hidden="true"
     >

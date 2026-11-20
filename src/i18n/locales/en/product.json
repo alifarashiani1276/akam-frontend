@@ -1,0 +1,30 @@
+{
+  "productPage": {
+    "eyebrow": "Product overview and specifications",
+    "exportBadge": "Export only",
+    "exportNotice": "This product is currently offered exclusively for export markets. Submit an export inquiry to discuss purchasing terms.",
+    "requestQuote": "Request a quote",
+    "introduction": "Product introduction",
+    "applications": "Applications",
+    "industries": "Target industries",
+    "advantages": "Advantages",
+    "specifications": "Technical specifications",
+    "specLabel": "Specification",
+    "specValue": "Value",
+    "specUnit": "Unit",
+    "models": "Product models",
+    "selectModel": "Select a model",
+    "gallery": "Images and videos",
+    "video": "Video",
+    "openMedia": "Open media item {{index}}",
+    "close": "Close",
+    "previousMedia": "Previous media",
+    "nextMedia": "Next media",
+    "downloadCatalog": "Download product catalog",
+    "related": "Related products",
+    "viewProduct": "View product",
+    "breadcrumbLabel": "Breadcrumb",
+    "home": "Home",
+    "products": "Products & Services"
+  }
+}
