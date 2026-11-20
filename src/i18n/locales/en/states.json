@@ -1,0 +1,16 @@
+{
+  "states": {
+    "loading": "Loading…",
+    "empty": {
+      "title": "Nothing here yet",
+      "text": "There is nothing to show right now. Please check back later."
+    },
+    "error": {
+      "title": "Something went wrong",
+      "text": "We couldn't load this content. Please try again.",
+      "networkTitle": "No connection",
+      "networkText": "Please check your internet connection and try again.",
+      "retry": "Try again"
+    }
+  }
+}

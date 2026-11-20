@@ -101,6 +101,13 @@
   .service-item { @apply rounded-none border-b border-base-300; }
   .service-title { @apply flex items-center gap-4 font-display text-2xl uppercase md:text-4xl; }
   .index-number { @apply font-display text-3xl text-primary; }
+
+  /* Shared loading / empty / error states (components/ui/PageState.jsx). */
+  .state-box { @apply mx-auto flex max-w-md flex-col items-center gap-4 px-4 py-16 text-center; }
+  .state-icon { @apply text-primary; }
+  .state-title { @apply font-display text-2xl uppercase md:text-3xl; }
+  .state-text { @apply text-base-content/70; }
+  .skeleton-block { @apply animate-pulse bg-white/5 motion-reduce:animate-none; }
 }
 
 /* Endless text ticker under the hero */
