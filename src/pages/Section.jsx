@@ -24,7 +24,7 @@ export default function Section() {
           <li className="font-semibold text-base-content">{section?.short || section?.title || sectionSlug}</li>
         </ol>
       </nav>
-      <PageState isLoading={isPending} error={error} isEmpty={!isPending && !error && !section} onRetry={refetch} isRetrying={isFetching} skeleton="text" skeletonCount={4}>
+      <PageState isLoading={isPending} error={error} isEmpty={!isPending && !error && !section} onRetry={refetch} isRetrying={isFetching} skeleton="text" skeletonCount={4} loader="both" loadingLabel={t('states.loaders.catalog')}>
         {section && <>
           <header className="mb-10 max-w-4xl">
             <div className="mb-3 flex flex-wrap items-center gap-3">

@@ -99,7 +99,7 @@ export default function Service() {
         </ol>
       </nav>
 
-      <PageState isLoading={isPending} error={error} isEmpty={!isPending && !error && !service} onRetry={refetch} isRetrying={isFetching} skeleton="text" skeletonCount={6}>
+      <PageState isLoading={isPending} error={error} isEmpty={!isPending && !error && !service} onRetry={refetch} isRetrying={isFetching} skeleton="text" skeletonCount={6} loader="both" loadingLabel={t('states.loaders.service')}>
         {service && <>
           <header className="mb-14 max-w-4xl">
             <span className="mb-4 block text-xs font-bold uppercase tracking-[0.22em] text-secondary">{t('servicePage.eyebrow')}</span>

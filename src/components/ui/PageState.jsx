@@ -1,5 +1,7 @@
-import { Inbox, RefreshCw, TriangleAlert, WifiOff } from 'lucide-react'
+import { Inbox, TriangleAlert, WifiOff } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
+import Loader from './Loader'
+import useDelayedFlag from '../../lib/useDelayedFlag'
 
 // Shared loading / empty / error states. Texts: states.* in locales/<lang>/states.json. Styles: .state-* in index.css.
 //
@@ -57,17 +59,23 @@ export default function PageState({
   isRetrying = false,
   skeleton = 'cards',
   skeletonCount = 4,
+  loadingLabel,
+  loader = 'skeleton',
   emptyTitle,
   emptyText,
   children,
 }) {
   const { t } = useTranslation()
+  const keepLoadingVisible = useDelayedFlag(isLoading)
+  const showRetryLoader = useDelayedFlag(isRetrying)
 
-  if (isLoading) {
+  if (isLoading || keepLoadingVisible) {
     return (
-      <div role="status" aria-busy="true">
-        <span className="sr-only">{t('states.loading')}</span>
-        <Skeleton variant={skeleton} count={skeletonCount} />
+      <div aria-busy="true">
+        {loader === 'skeleton' && <span className="sr-only" role="status" aria-live="polite">{loadingLabel || t('states.loading')}</span>}
+        {loader === 'spinner' && <Loader layout="page" label={loadingLabel || t('states.loading')} />}
+        {loader === 'both' && <Loader layout="block" label={loadingLabel || t('states.loading')} />}
+        {(loader === 'skeleton' || loader === 'both') && <Skeleton variant={skeleton} count={skeletonCount} />}
       </div>
     )
   }
@@ -83,7 +91,7 @@ export default function PageState({
       >
         {onRetry && (
           <button type="button" className="btn btn-primary" onClick={() => onRetry()} disabled={isRetrying}>
-            <RefreshCw size={18} className={isRetrying ? 'animate-spin' : ''} aria-hidden="true" />
+            {(isRetrying || showRetryLoader) && <Loader layout="inline" size="sm" label={t('states.loading')} />}
             {t('states.error.retry')}
           </button>
         )}

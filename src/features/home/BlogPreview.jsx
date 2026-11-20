@@ -3,6 +3,8 @@ import { motion } from 'motion/react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import TextReveal from '../../components/motion/TextReveal'
+import Loader from '../../components/ui/Loader'
+import useDelayedFlag from '../../lib/useDelayedFlag'
 import { BLOG, blogListPath } from '../../config/blog'
 import PostCard from '../blog/PostCard'
 import { useLatestPosts } from '../blog/useLatestPosts'
@@ -17,8 +19,9 @@ export default function BlogPreview() {
   const { t, i18n } = useTranslation()
   const lang = i18n.language
   const { posts, loading, error } = useLatestPosts(lang, BLOG.latestCount)
+  const showBlogLoader = useDelayedFlag(loading)
 
-  if (error || (!loading && posts.length === 0)) return null
+  if ((error || (!loading && posts.length === 0)) && !showBlogLoader) return null
 
   return (
     <section id="blog" className="relative scroll-mt-20 pb-16 pt-8 md:pb-24 md:pt-12" style={{ backgroundColor: BG }}>
@@ -49,8 +52,8 @@ export default function BlogPreview() {
         </div>
 
         <div className="grid gap-x-5 gap-y-12 md:grid-cols-2">
-          {loading
-            ? Array.from({ length: BLOG.latestCount }, (_, i) => <div key={i} className="aspect-[16/10] animate-pulse bg-white/5" />)
+          {(loading || showBlogLoader)
+            ? <div className="md:col-span-2"><Loader layout="block" label={t('states.loaders.blog')} /><div className="grid gap-5 md:grid-cols-2">{Array.from({ length: BLOG.latestCount }, (_, i) => <div key={i} className="skeleton-block aspect-[16/10]" />)}</div></div>
             : posts.map((post, i) => (
                 <motion.div
                   key={post.id}

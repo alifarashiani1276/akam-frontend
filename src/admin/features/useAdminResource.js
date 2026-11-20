@@ -1,0 +1,3 @@
+import {useQuery,useMutation,useQueryClient} from '@tanstack/react-query'
+import {adminClient} from '../api/client'
+export function useAdminResource(resource,params={}){const qc=useQueryClient();const key=['admin',resource,params];const query=useQuery({queryKey:key,queryFn:()=>adminClient.list(resource,params)});const save=useMutation({mutationFn:item=>adminClient.save(resource,item),onSuccess:()=>qc.invalidateQueries({queryKey:['admin',resource]})});const remove=useMutation({mutationFn:id=>adminClient.remove(resource,id),onSuccess:()=>qc.invalidateQueries({queryKey:['admin',resource]})});return {...query,rows:query.data?.data||[],meta:query.data?.meta,save:save.mutateAsync,remove:remove.mutateAsync,saving:save.isPending}}

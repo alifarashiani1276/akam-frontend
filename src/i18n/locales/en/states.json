@@ -11,6 +11,23 @@
       "networkTitle": "No connection",
       "networkText": "Please check your internet connection and try again.",
       "retry": "Try again"
+    },
+    "loaders": {
+      "page": "Preparing page…",
+      "products": "Loading products…",
+      "product": "Loading product…",
+      "service": "Loading services…",
+      "projects": "Loading projects…",
+      "project": "Loading project…",
+      "about": "Loading about information…",
+      "capabilities": "Loading capabilities…",
+      "contact": "Loading contact details…",
+      "blog": "Loading articles…",
+      "catalog": "Loading catalog…",
+      "settings": "Loading information…",
+      "sending": "Sending your request…",
+      "chatReply": "Preparing the answer…",
+      "more": "Loading more…"
     }
   }
 }

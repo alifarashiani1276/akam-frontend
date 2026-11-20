@@ -37,7 +37,7 @@ export default function About() {
 
   return <main className="container-page py-8 md:py-12">
     <nav aria-label={fallback('breadcrumbLabel')} className="mb-8 text-sm text-base-content/60"><ol className="flex flex-wrap items-center gap-2"><li><Link to={`/${lang}`} className="hover:text-primary">{fallback('home')}</Link></li><li aria-hidden="true">/</li><li className="font-semibold text-base-content" aria-current="page">{title}</li></ol></nav>
-    <PageState isLoading={query.isPending} skeleton="text" skeletonCount={5}>
+    <PageState isLoading={query.isPending} skeleton="text" skeletonCount={5} loader="both" loadingLabel={t('states.loaders.about')}>
       <header className="mb-12 max-w-4xl"><span className="mb-4 block text-xs font-bold uppercase tracking-[.22em] text-secondary">{fallback('eyebrow')}</span><h1 className="text-3xl font-black leading-tight text-primary md:text-5xl">{title}</h1><p className="mt-6 text-lg leading-9 text-base-content/75">{intro}</p></header>
       <section className="mb-14 max-w-4xl"><h2 className="mb-4 text-2xl font-extrabold text-primary">{fallback('storyTitle')}</h2><p className="whitespace-pre-line leading-9 text-base-content/75">{text}</p></section>
       {capabilities?.length > 0 && <section className="mb-14"><h2 className="mb-6 text-2xl font-extrabold text-primary">{fallback('capabilitiesTitle')}</h2><ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{capabilities.map((item, index) => <li key={index} className="flex items-start gap-3 rounded-box border border-base-300 bg-base-100 p-5"><Wrench className="mt-1 shrink-0 text-secondary" size={21}/><span className="leading-8 text-base-content/75">{item}</span></li>)}</ul></section>}

@@ -4,10 +4,13 @@ import { useSettings } from '../../features/settings/useSettings'
 import Logo from '../ui/Logo'
 import NavItem from './NavItem'
 import SectionBackground from '../ui/SectionBackground'
+import Loader from '../ui/Loader'
+import useDelayedFlag from '../../lib/useDelayedFlag'
 
 export default function Footer() {
   const { t, i18n } = useTranslation()
-  const { data: settings } = useSettings(i18n.language)
+  const { data: settings, isPending } = useSettings(i18n.language)
+  const showSettingsLoader = useDelayedFlag(isPending)
   const year = new Intl.NumberFormat(i18n.language, { useGrouping: false }).format(new Date().getFullYear())
   const contacts = (settings?.phones ?? []).filter((phone) => phone.confirmed && phone.number)
   const social = settings?.social ?? []
@@ -36,7 +39,8 @@ export default function Footer() {
 
         <div>
           <h6 className="footer-title">{t('footer.contact')}</h6>
-          <ul className="space-y-2">
+          <ul className="settings-loading-list space-y-2">
+            {(isPending || showSettingsLoader) && <li><Loader layout="inline" size="sm" label={t('states.loaders.settings')} /></li>}
             {contacts.map((phone) => (
               <li key={phone.id}>
                 {phone.label || t(`contactLabels.${phone.id}`)}: <span dir="ltr">{phone.number}</span>

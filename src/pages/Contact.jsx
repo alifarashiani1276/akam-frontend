@@ -26,7 +26,7 @@ export default function ContactPage() {
       <div className="grid items-start gap-8 lg:grid-cols-[0.8fr_1.2fr]">
         <aside className="space-y-5">
           {settings.isPending ? (
-            <PageState isLoading skeleton="list" skeletonCount={3} />
+            <PageState isLoading={settings.isPending} skeleton="list" skeletonCount={3} loader="both" loadingLabel={t('states.loaders.contact')} />
           ) : settings.error ? (
             <PageState error={settings.error} onRetry={settings.refetch} isRetrying={settings.isFetching} />
           ) : !hasDetails ? (

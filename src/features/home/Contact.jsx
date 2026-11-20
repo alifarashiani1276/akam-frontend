@@ -3,12 +3,15 @@ import { Link, useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import TextReveal from '../../components/motion/TextReveal'
 import Button from '../../components/ui/Button'
+import Loader from '../../components/ui/Loader'
+import useDelayedFlag from '../../lib/useDelayedFlag'
 import { useSettings } from '../settings/useSettings'
 
 export default function Contact() {
   const { t } = useTranslation()
   const { lang = 'fa' } = useParams()
-  const { data } = useSettings(lang)
+  const { data, isPending } = useSettings(lang)
+  const showSettingsLoader = useDelayedFlag(isPending)
   const contacts = (data?.phones ?? []).filter((contact) => contact.confirmed && contact.number)
 
   return (
@@ -18,7 +21,8 @@ export default function Contact() {
         <div className="max-w-4xl">
           <TextReveal as="h2" text={t('contact.title')} className="mb-4 block text-4xl font-black md:text-6xl" />
           <p className="mb-8 text-lg">{t('contact.text')}</p>
-          <div className="flex flex-wrap gap-3">
+          <div className="settings-loading-space flex-wrap gap-3">
+            {(isPending || showSettingsLoader) && <Loader layout="inline" label={t('states.loaders.settings')} className="loader-on-primary" />}
             {contacts.map((contact) => (
               <Button key={contact.id} href={`tel:${contact.number}`} variant="dark" icon={false}>
                 <Phone size={18} />

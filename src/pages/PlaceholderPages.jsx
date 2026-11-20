@@ -1,6 +1,8 @@
 import { useTranslation } from 'react-i18next'
 import { useParams } from 'react-router-dom'
 import { useLatestPosts } from '../features/blog/useLatestPosts'
+import Loader from '../components/ui/Loader'
+import useDelayedFlag from '../lib/useDelayedFlag'
 import { useSetAlternates } from '../lib/useAlternates'
 import { createBreadcrumbJsonLd, useSeo } from '../lib/useSeo'
 
@@ -36,6 +38,9 @@ export function ContactPage() { return <Placeholder titleKey="nav.contact" /> }
 export function BlogList() {
   const { lang = 'fa' } = useParams()
   const { t } = useTranslation()
+  const { loading } = useLatestPosts(lang, 50)
+  const showBlogLoader = useDelayedFlag(loading)
+  if (loading || showBlogLoader) return <section className="container-page min-h-[45vh] py-20"><Loader layout="page" label={t('states.loaders.blog')} /></section>
   return <Placeholder titleKey="pages.blog" seoJsonLd={createBreadcrumbJsonLd([{ name: t('nav.home'), path: `/${lang}` }, { name: t('pages.blog'), path: `/${lang}/blog` }])} />
 }
 export function BlogPost() {

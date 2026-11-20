@@ -150,7 +150,7 @@ export default function Product() {
         </ol>
       </nav>
 
-      <PageState isLoading={isPending} error={error} isEmpty={!isPending && !error && !product} onRetry={refetch} isRetrying={isFetching} skeleton="text" skeletonCount={6}>
+      <PageState isLoading={isPending} error={error} isEmpty={!isPending && !error && !product} onRetry={refetch} isRetrying={isFetching} skeleton="text" skeletonCount={6} loader="both" loadingLabel={t('states.loaders.product')}>
         {product && <>
           <header className="mb-14 grid items-center gap-8 lg:grid-cols-2 lg:gap-14">
             <div>

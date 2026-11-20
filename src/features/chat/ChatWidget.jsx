@@ -5,6 +5,8 @@ import { Link, useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { LANGUAGES } from '../../config/languages'
 import { ChatError, sendMessage } from './chatApi'
+import Loader from '../../components/ui/Loader'
+import useDelayedFlag from '../../lib/useDelayedFlag'
 
 const SESSION_KEY = 'akam_chat_session_v1'
 const makeSessionId = () => globalThis.crypto?.randomUUID?.() ?? `akam-${Date.now()}-${Math.random().toString(36).slice(2)}`
@@ -191,6 +193,8 @@ export default function ChatWidget() {
     focusInput()
   }
 
+  const waitingForFirstToken = streaming && messages.some((message) => message.role === 'assistant' && !message.content)
+  const showPreparingLoader = useDelayedFlag(waitingForFirstToken)
   const suggestions = t('chat.suggestions', { returnObjects: true })
 
   return (
@@ -256,7 +260,7 @@ export default function ChatWidget() {
                 {messages.map((message) => (
                   <div key={message.id} className={`flex ${message.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                     <div className={`max-w-[88%] rounded-2xl px-3 py-2.5 ${message.role === 'user' ? 'rounded-ee-sm bg-primary text-primary-content' : 'rounded-es-sm bg-base-200'}`}>
-                      {message.content ? <MessageContent text={message.content} lang={lang} /> : streaming && message.role === 'assistant' ? <span className="inline-flex items-center gap-2 text-xs text-base-content/60"><span className="loading loading-dots loading-xs" />{t('chat.typing')}</span> : null}
+                      {message.content ? <MessageContent text={message.content} lang={lang} /> : showPreparingLoader && message.role === 'assistant' ? <Loader layout="inline" size="sm" delay={0} label={t('states.loaders.chatReply')} /> : null}
                     </div>
                   </div>
                 ))}

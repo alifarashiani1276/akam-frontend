@@ -1,0 +1,11 @@
+import {useState} from 'react'
+import {NavLink,Outlet,useNavigate} from 'react-router-dom'
+import {useAdminAuth} from '../auth/authContext'
+import {LayoutDashboard,Package,BriefcaseBusiness,FolderKanban,Network,Inbox,Images,FileText,Settings,Users,LogOut,Menu,X,FlaskConical} from 'lucide-react'
+const links=[['','داشبورد',LayoutDashboard],['products','محصولات',Package],['services','خدمات',BriefcaseBusiness],['projects','پروژه‌ها',FolderKanban],['subcategories','بخش‌ها و زیرمجموعه‌ها',Network],['inquiries','درخواست‌ها',Inbox],['media','کتابخانه رسانه',Images],['pages','صفحات ثابت',FileText],['settings','تنظیمات',Settings],['users','کاربران',Users]]
+export default function AdminLayout(){const [open,setOpen]=useState(false);const {user,logout,isAdmin}=useAdminAuth();const nav=useNavigate();return <div className="admin-shell" dir="rtl">
+ <aside className={`admin-sidebar ${open?'is-open':''}`}><div className="admin-brand"><span className="admin-mark">A</span><div><b>AKAM MACHINE</b><small>مدیریت محتوا</small></div><button className="admin-icon mobile-only" onClick={()=>setOpen(false)} aria-label="بستن"><X/></button></div>
+ <div className="admin-mode"><FlaskConical size={16}/> حالت آزمایشی (Mock)</div><nav>{links.filter(([r])=>r!=='users'||isAdmin).map(([r,label,Icon])=><NavLink end={r===''} key={r} to={`/admin${r?'/'+r:''}`} onClick={()=>setOpen(false)}><Icon size={18}/><span>{label}</span></NavLink>)}</nav>
+ <div className="admin-side-bottom"><div className="admin-avatar">{user?.name?.slice(0,1)||'م'}</div><div className="min-w-0 flex-1"><b>{user?.name}</b><small>{user?.role==='admin'?'مدیر':'ویرایشگر'}</small></div><button className="admin-icon" onClick={async()=>{await logout();nav('/admin/login')}} title="خروج"><LogOut size={18}/></button></div></aside>
+ {open&&<button className="admin-scrim" onClick={()=>setOpen(false)} aria-label="بستن منو"/>}
+ <main className="admin-main"><header className="admin-topbar"><button className="admin-icon mobile-only" onClick={()=>setOpen(true)} aria-label="منو"><Menu/></button><div><span className="text-muted">پنل مدیریت</span><span className="mx-2">/</span><b>آکام ماشین</b></div><div className="admin-top-actions"><span className="admin-live"><i/>محیط آزمایشی</span><span className="admin-user-name">{user?.name}</span></div></header><div className="admin-content"><Outlet/></div></main></div>}

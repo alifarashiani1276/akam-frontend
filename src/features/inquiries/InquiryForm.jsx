@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { useCreateInquiry } from './useCreateInquiry'
+import Loader from '../../components/ui/Loader'
+import useDelayedFlag from '../../lib/useDelayedFlag'
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 const PHONE_RE = /^\+?[0-9٠-٩۰-۹][0-9٠-٩۰-۹\s().-]{5,}$/
@@ -23,6 +25,7 @@ export default function InquiryForm({ type = 'contact', productId, serviceId }) 
   const { lang = 'fa' } = useParams()
   const { t } = useTranslation()
   const mutation = useCreateInquiry()
+  const showSendingLoader = useDelayedFlag(mutation.isPending)
   const [values, setValues] = useState({ name: '', company: '', phone: '', email: '', country: '', message: '', website: '' })
   const [errors, setErrors] = useState({})
   const [notice, setNotice] = useState(null)
@@ -121,8 +124,7 @@ export default function InquiryForm({ type = 'contact', productId, serviceId }) 
 
         <div className="mt-6 flex flex-wrap items-center gap-4">
           <button type="submit" className="btn btn-primary min-w-44" disabled={mutation.isPending}>
-            {mutation.isPending && <span className="loading loading-spinner loading-sm" aria-hidden="true" />}
-            {mutation.isPending ? t('forms.sending') : t('forms.submit')}
+            {showSendingLoader ? <Loader layout="inline" size="sm" delay={0} label={t('states.loaders.sending')} /> : t('forms.submit')}
           </button>
           <p className="text-xs text-base-content/50">{t('forms.requiredNote')}</p>
         </div>

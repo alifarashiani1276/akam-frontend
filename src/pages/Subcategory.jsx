@@ -4,6 +4,8 @@ import { useTranslation } from 'react-i18next'
 import { ArrowLeft, ArrowRight } from 'lucide-react'
 import Button from '../components/ui/Button'
 import PageState from '../components/ui/PageState'
+import Loader from '../components/ui/Loader'
+import useDelayedFlag from '../lib/useDelayedFlag'
 import BrandTriangles from '../components/ui/BrandTriangles'
 import { useSubcategory } from '../features/catalog/useCatalog'
 import { useSetAlternates } from '../lib/useAlternates'
@@ -40,6 +42,7 @@ export default function Subcategory() {
   const page = pageState.slug === subSlug ? pageState.page : 1
   const setPage = (nextPage) => setPageState({ slug: subSlug, page: nextPage })
   const { data, isPending, error, refetch, isFetching } = useSubcategory(lang, subSlug, { page, perPage: PAGE_SIZE })
+  const showPaginationLoader = useDelayedFlag(isFetching && !isPending)
   useSetAlternates(data?.alternates)
   useSeo({ title: `${data?.meta?.title || data?.title || t('pages.productSubcategory')} | AKAM`, description: data?.meta?.description || data?.text || '', alternates: data?.alternates, jsonLd: data ? createBreadcrumbJsonLd([{ name: t('products.home'), path: `/${lang}` }, { name: t('products.title'), path: `/${lang}/products` }, { name: data.section_title || sectionSlug, path: `/${lang}/products/${sectionSlug}` }, { name: data.title, path: `/${lang}/products/${sectionSlug}/${subSlug}` }]) : null })
 
@@ -60,7 +63,7 @@ export default function Subcategory() {
         <li className="font-semibold text-base-content">{data?.title || subSlug}</li>
       </ol>
     </nav>
-    <PageState isLoading={isPending} error={error} isEmpty={!isPending && !error && !data} onRetry={refetch} isRetrying={isFetching} skeleton="text" skeletonCount={4}>
+    <PageState isLoading={isPending} error={error} isEmpty={!isPending && !error && !data} onRetry={refetch} isRetrying={isFetching} skeleton="text" skeletonCount={4} loader="both" loadingLabel={t('states.loaders.products')}>
       {data && <>
         <header className="mb-9 max-w-4xl">
           <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-secondary">{t('products.subcategoryEyebrow')}</p>
@@ -68,8 +71,11 @@ export default function Subcategory() {
           <p className="mt-4 leading-8 text-base-content/70">{data.text}</p>
         </header>
         <PageState isEmpty={items.length === 0} emptyTitle={t('products.noItemsTitle')} emptyText={t('products.noItemsText')}>
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="relative">
+            {showPaginationLoader && <Loader layout="overlay" size="sm" delay={0} label={t('states.loaders.more')} />}
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {items.map((item, index) => <ListingCard key={`${item.kind}-${item.id || item.slug}`} index={index} item={item} kind={item.kind} lang={lang} t={t} fallbackImage={data.section_image || '/images/card-1.webp'} />)}
+            </div>
           </div>
           {totalPages > 1 && <nav aria-label={t('products.pagination')} className="mt-10 flex items-center justify-center gap-4">
             <button type="button" className="btn btn-outline btn-sm" onClick={() => setPage(Math.max(1, page - 1))} disabled={page <= 1}><Prev size={16} />{t('products.previous')}</button>

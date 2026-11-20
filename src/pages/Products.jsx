@@ -50,7 +50,7 @@ export default function Products() {
         <p className="mt-4 max-w-3xl text-base-content/70 md:text-lg">{t('products.intro')}</p>
       </div>
       <div className="container-page space-y-8">
-        <PageState isLoading={isPending} error={error} isEmpty={!isPending && !error && sections.length === 0} onRetry={refetch} isRetrying={isFetching} skeleton="cards" skeletonCount={4}>
+        <PageState isLoading={isPending} error={error} isEmpty={!isPending && !error && sections.length === 0} onRetry={refetch} isRetrying={isFetching} skeleton="cards" skeletonCount={4} loader="both" loadingLabel={t('states.loaders.products')}>
           {sections.map((section, index) => (
             <Reveal key={section.id || section.slug}>
               <Link to={`/${lang}/products/${section.slug}`} className="group block focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-primary">

@@ -1,11 +1,13 @@
 import { lazy, Suspense } from 'react'
+import { useTranslation } from 'react-i18next'
 import { MotionConfig } from 'motion/react'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { DEFAULT_LANG } from './config/languages'
 import MainLayout from './components/layout/MainLayout'
-import PageState from './components/ui/PageState'
+import Loader from './components/ui/Loader'
 import Home from './pages/Home'
 
+const AdminApp = lazy(() => import('./admin/AdminApp'))
 const ProductsPage = lazy(() => import('./pages/Products'))
 const ProductSectionPage = lazy(() => import('./pages/Section'))
 const ProductSubcategoryPage = lazy(() => import('./pages/Subcategory'))
@@ -21,7 +23,8 @@ const BlogPost = lazy(() => import('./pages/PlaceholderPages').then((m) => ({ de
 const NotFound = lazy(() => import('./pages/NotFound'))
 
 function LazyPage({ children }) {
-  return <Suspense fallback={<PageState isLoading skeleton="text" skeletonCount={3} />}>{children}</Suspense>
+  const { t } = useTranslation()
+  return <Suspense fallback={<Loader layout="page" label={t('states.loaders.page')} />}>{children}</Suspense>
 }
 
 export default function App() {
@@ -29,6 +32,7 @@ export default function App() {
     <MotionConfig reducedMotion="user">
       <BrowserRouter>
         <Routes>
+          <Route path="/admin/*" element={<Suspense fallback={<Loader layout="page" label="در حال بارگذاری پنل…" />}><AdminApp /></Suspense>} />
           <Route path="/" element={<Navigate to={`/${DEFAULT_LANG}`} replace />} />
           <Route path="/:lang" element={<MainLayout />}>
             <Route index element={<Home />} />
