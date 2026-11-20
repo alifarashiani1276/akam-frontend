@@ -1,5 +1,6 @@
 const API_BASE = (import.meta.env?.VITE_API_URL ?? '').replace(/\/+$/, '')
-const USE_MOCK = import.meta.env?.VITE_USE_MOCK === 'true'
+// Keep the chat preview functional until the backend is deployed.
+const USE_MOCK = import.meta.env?.VITE_USE_MOCK !== 'false'
 
 export class ChatError extends Error {
   constructor(status = 0, message = 'Chat request failed') {
